@@ -46,3 +46,8 @@ function calcularEstadia() {
       event.preventDefault();
       validarFormulario();
     });
+
+
+
+ 
+    
