@@ -434,27 +434,6 @@
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
  }
  
- /* Personalización de la barra de desplazamiento */
- .contenedor-fotos::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
- }
- 
- .contenedor-fotos::-webkit-scrollbar-track {
-  background: #ddd;
-  border-radius: 5px;
- }
- 
- .contenedor-fotos::-webkit-scrollbar-thumb {
-  background: #007bff;
-  border-radius: 5px;
- }
- 
- .contenedor-fotos::-webkit-scrollbar-thumb:hover {
-  background: #33b5e5;
- }
-
-
  /* Estilos de la página de servicios */
  body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -658,12 +637,12 @@
 /* Estilos para el último párrafo */
 #sobre-nosotros > p:last-child {
   margin-top: 30px; /* Mayor espacio entre el último párrafo y el contenido */
-  margin: center;
   font-style: italic; 
   font-family: 'Lucida Sans';
   font-size: 32px;
 }
- /*------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------------------------------------*/
 
