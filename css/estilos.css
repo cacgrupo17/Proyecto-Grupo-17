@@ -44,6 +44,43 @@
   max-width: 100%;
   height: auto;
  }
+
+/* NavBar Boostrap */
+.navbar {
+  background-color: #00FFFF;
+  width: 100% !important; /* Establece el ancho al 100% del contenedor */
+  max-width: none !important; /* Elimina cualquier límite máximo de ancho */
+}
+
+.nav-link{
+  color: #666777 !important;
+  font-weight: 500 !important;
+  position: relative !important;
+  font-size: 18px !important;
+}
+
+.nav-link:hover, .nav-link:active {
+  color: #000 !important;
+}
+
+.nav-link::before {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 0 !important;
+  height: 2px !important;
+  background-color: hotpink !important;
+  visibility: hidden !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+.nav-link:hover::before{
+  width: 100% !important;
+  visibility: visible !important;
+}
+/* Fin */
  
  /* Estilos de layout */
  .container {
