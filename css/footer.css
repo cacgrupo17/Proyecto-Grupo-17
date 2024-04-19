@@ -1,19 +1,11 @@
 /*Footer*/
 footer {
-    position: fixed; /* Fija el pie de página en la parte inferior de la ventana */
-    bottom: 0; /* Posiciona el pie de página al borde inferior */
+    position: fixed; /* Establece la posición del footer como fija, lo que significa que permanecerá en la parte inferior de la ventana del navegador. */
+    bottom: 0; /* Coloca el footer al borde inferior de la ventana del navegador. */
+    z-index: 1000; /* Establece la propiedad z-index del footer en 1000 para asegurarse de que esté por encima de otros elementos con z-index inferiores. */
 }
 
-/* Media query para pantallas con altura máxima de 800px */
-@media (max-height:800px) {
-    footer {
-        position: static; /* Cambia la posición del pie de página a estática si la altura máxima es 800px o menos */
-    }
 
-    header {
-        padding-top: 40px; /* Añade espacio superior al encabezado si la altura máxima es 800px o menos */
-    }
-}
 
 /* Estilo para el pie de página distribuido */
 .footer-distributed {
@@ -167,6 +159,17 @@ footer {
 
 .footer-links a:hover {
     color: #bef202; /* Cambia el color del texto al pasar el mouse sobre los enlaces */
+}
+
+/* Media query para pantallas con altura máxima de 800px */
+@media (max-height:800px) {
+    footer {
+        position: relative; /* Cambia la posición del pie de página a estática si la altura máxima es 800px o menos */
+    }
+
+    header {
+        padding-top: 40px; /* Añade espacio superior al encabezado si la altura máxima es 800px o menos */
+    }
 }
 
 /* Media query para pantallas con ancho máximo de 880px */
