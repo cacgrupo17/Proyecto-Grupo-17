@@ -8,9 +8,13 @@
   <link rel="icon" type="image/png" href="imagenes/favicon_pata_perro.png"/> 
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/responsive.css">
   <!-- Boostrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
 <body>
   <header>
@@ -134,50 +138,59 @@
         </div>
       </div>
      </main>
-      <footer>
-      <div class="container">
-        <h2 class="titulo1">Pensionado Canópolis.</h2> 
-        <h2 class = "titulo2">El mejor lugar para tu mejor amigo ...</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <h3>CONTENIDO</h3>
-            <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="servicios.html">Servicios</a></li>
-              <li><a href="galeria.html">Galería</a></li>
-              <li><a href="about.html">Sobre Nosotros</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h3>CONTACTO</h3>
-            <ul>
-              <li><i class="Canopolis-phone"></i> +54 11 6701 0997</li>
-              <li><i class="Canopolis-mail"></i> info@pensionadocanopolis.com</li>
-              <li><i class="Canopolis-adress"></i> Dirección: Av. Siempreviva 1234</li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h3>Redes Sociales</h3>
-            <ul class="redes-sociales">
-              <li id="instagram"><img src="imagenes/instagram.png" alt="Instagram"></li>
-              <li id="X"><img src="imagenes/X.png" alt="X"></li>
-              <li id="facebook"><img src="imagenes/facebook.png" alt="facebook"></li>
-            </ul>
-          </div>
-          <p>
-            <a href="http://jigsaw.w3.org/css-validator/check/referer">
-              <img style="border:0;width:88px;height:31px"
-                   src="http://jigsaw.w3.org/css-validator/images/vcss"
-                   alt="¡CSS Válido!">
-            </a>
-          </p>               
-        </div>
+
+    <!-- Footer -->
+    <footer class="footer-distributed">    
+      <div class="footer-left"> <!-- Contenedor izquierdo del pie de página -->        
+          <h3><span>Canópolis</span></h3> <!-- Encabezado con nombre del sitio -->        
+          <p class="footer-links"> <!-- Enlaces de navegación del pie de página -->
+              <a href="index.html">Inicio</a>
+              | <!-- Separador entre enlaces -->
+              <a href="servicios.html">Servicios</a>
+              |
+              <a href="galeria.html">Galería</a>
+              |
+              <a href="about.html">Nosotros</a>
+              |
+              <a href="contacto.html">Contacto</a>
+          </p>        
+          <p class="footer-company-name"> <!-- Texto de derechos de autor -->
+              Copyright © 2024  Pensionado Canópolis <br>
+              Todos los derechos reservados
+          </p>
       </div>
-      <div class="copyright">
-        <p>&copy; 2024 Pensionado Canópolis. Todos los derechos reservados.</p>
+      
+      <div class="footer-center"> <!-- Contenedor central del pie de página -->        
+          <div><!-- Información de contacto -->
+              <i class="fa fa-map-marker"></i>
+              <p><span>Av. Siempreviva 1234</span>
+                  Springfield</p>
+          </div>
+          <div>
+              <i class="fa fa-phone"></i>
+              <p>+54 11 6701 0997</p>
+          </div>
+          <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:info@pensionadocanopolis.com">info@pensionadocanopolis.com</a></p>
+          </div>
       </div>
-   </footer>
+  
+      <div class="footer-right"> <!-- Contenedor derecho del pie de página -->        
+          <p class="footer-company-about"> <!-- Información sobre la empresa -->
+              <span>Más que un Pensionado</span>
+              <strong>En Canópolis</strong>, queremos que tu perro se sienta como parte de nuestra familia. 
+              Por eso, nos preocupamos por su bienestar físico y emocional, y les ofrecemos una atención 
+              personalizada y llena de cariño.
+          </p>        
+          <div class="footer-icons"> <!-- Iconos de redes sociales -->
+              <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+          </div>
+      </div>
+    </footer>
+      
    <!-- Enlace JS -->
   <script src="js/index.js" defer></script>
   <!-- Boostrap JS -->

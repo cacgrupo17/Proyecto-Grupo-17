@@ -1,0 +1,37 @@
+/* Estilos para la barra de navegación Bootstrap */
+.navbar {
+    background-color: #1b676b; /* Color de fondo para la barra de navegación */
+    width: 100% !important; /* Establece el ancho al 100% del contenedor */
+    max-width: none !important; /* Elimina cualquier límite máximo de ancho */
+}
+
+.nav-link {
+    color: #000 !important; /* Color del texto de los enlaces de navegación */
+    font-weight: 500 !important; /* Peso de la fuente de los enlaces */
+    position: relative !important; /* Posición relativa para los enlaces */
+    font-size: 18px !important; /* Tamaño de fuente de los enlaces */
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: #000 !important; /* Cambia el color del texto al pasar el mouse o al estar activo */
+}
+
+.nav-link::before {
+    content: "" !important; /* Contenido vacío antes del enlace */
+    position: absolute !important; /* Posición absoluta para el elemento */
+    bottom: 0 !important; /* Posiciona el elemento en la parte inferior del enlace */
+    left: 50% !important; /* Posiciona el elemento en el centro horizontal del enlace */
+    transform: translateX(-50%) !important; /* Centra el elemento horizontalmente */
+    width: 0 !important; /* Ancho inicial del elemento */
+    height: 2px !important; /* Altura del elemento */
+    background-color: #bef202 !important; /* Color de fondo del elemento */
+    visibility: hidden !important; /* Oculta el elemento inicialmente */
+    transition: 0.3s ease-in-out !important; /* Efecto de transición */
+}
+
+.nav-link:hover::before {
+    width: 100% !important; /* Aumenta el ancho al 100% al pasar el mouse */
+    visibility: visible !important; /* Hace visible el elemento al pasar el mouse */
+}
+/* Fin */

@@ -1,0 +1,187 @@
+/*Footer*/
+footer {
+    position: fixed; /* Fija el pie de página en la parte inferior de la ventana */
+    bottom: 0; /* Posiciona el pie de página al borde inferior */
+}
+
+/* Media query para pantallas con altura máxima de 800px */
+@media (max-height:800px) {
+    footer {
+        position: static; /* Cambia la posición del pie de página a estática si la altura máxima es 800px o menos */
+    }
+
+    header {
+        padding-top: 40px; /* Añade espacio superior al encabezado si la altura máxima es 800px o menos */
+    }
+}
+
+/* Estilo para el pie de página distribuido */
+.footer-distributed {
+    background-color: #1b676b; /* Color de fondo del pie de página */
+    box-sizing: border-box; /* El tamaño incluye el relleno y el borde pero no los márgenes */
+    width: 100%; /* Ancho completo del pie de página */
+    text-align: left; /* Alineación del texto a la izquierda */
+    font: bold 16px sans-serif; /* Fuente en negrita de tamaño 16px */
+    padding: 50px 50px 60px 50px; /* Espaciado interno del pie de página (arriba, derecha, abajo, izquierda) */
+    margin-top: 80px; /* Margen superior del pie de página */
+}
+
+/* Estilo para las secciones internas del pie de página (izquierda, centro, derecha) */
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block; /* Hace que las secciones se muestren una al lado de la otra */
+    vertical-align: top; /* Alinea las secciones en la parte superior de su contenedor */
+}
+
+/* Estilo para la sección izquierda del pie de página */
+.footer-distributed .footer-left {
+    width: 30%; /* Ancho del 30% para la sección izquierda */
+}
+
+/* Estilo para el título h3 dentro del pie de página */
+.footer-distributed h3 {
+    color: #ffffff; /* Color del texto del título */
+    font: normal 36px 'sans-serif'; /* Fuente del título con tamaño y estilo */
+    margin: 0; /* Elimina el margen del título */
+}
+
+/* Estilo para el span dentro del título h3 */
+.footer-distributed h3 span {
+    color: #bef202; /* Color especial para el texto del span dentro del título */
+}
+
+/* Estilo para los enlaces del pie de página */
+.footer-distributed .footer-links {
+    color: #ffffff; /* Color del texto de los enlaces */
+    margin: 20px 0 12px; /* Márgenes del bloque de enlaces */
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block; /* Muestra los enlaces en línea */
+    line-height: 1.8; /* Altura de línea de los enlaces */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    color: inherit; /* Hereda el color del texto */
+}
+
+/* Estilo para el nombre de la empresa en el pie de página */
+.footer-distributed .footer-company-name {
+    color: #8f9296; /* Color del texto del nombre de la empresa */
+    font-size: 14px; /* Tamaño de fuente del nombre de la empresa */
+    font-weight: normal; /* Peso normal de la fuente del nombre de la empresa */
+    margin: 0; /* Elimina el margen del nombre de la empresa */
+}
+
+/* Estilo para la sección central del pie de página */
+.footer-distributed .footer-center {
+    width: 35%; /* Ancho del 35% para la sección central */
+}
+
+/* Estilo para los iconos dentro de la sección central del pie de página */
+.footer-distributed .footer-center i {
+    background-color: #33383b; /* Color de fondo del ícono */
+    color: #ffffff; /* Color del texto del ícono */
+    font-size: 25px; /* Tamaño de fuente del ícono */
+    width: 38px; /* Ancho del ícono */
+    height: 38px; /* Altura del ícono */
+    border-radius: 50%; /* Borde redondeado del ícono (forma de círculo) */
+    text-align: center; /* Alineación del texto dentro del ícono */
+    line-height: 42px; /* Altura de línea del texto dentro del ícono */
+    margin: 10px 15px; /* Márgenes del ícono */
+    vertical-align: middle; /* Alineación vertical del ícono */
+}
+
+/* Estilo específico para el ícono de correo electrónico dentro de la sección central */
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px; /* Tamaño de fuente del ícono de correo */
+    line-height: 38px; /* Altura de línea del ícono de correo */
+}
+
+/* Estilo para los párrafos dentro de la sección central del pie de página */
+.footer-distributed .footer-center p {
+    display: inline-block; /* Muestra los párrafos en línea */
+    color: #ffffff; /* Color del texto del párrafo */
+    vertical-align: middle; /* Alineación vertical del párrafo */
+    margin: 0; /* Elimina el margen del párrafo */
+}
+
+.footer-distributed .footer-center p span {
+    display: block; /* Muestra el span como bloque */
+    font-weight: normal; /* Peso normal de la fuente del span */
+    font-size: 14px; /* Tamaño de fuente del span */
+    line-height: 2; /* Altura de línea del span */
+}
+
+/* Estilo para los enlaces dentro de los párrafos de la sección central del pie de página */
+.footer-distributed .footer-center p a {
+    color: #bef202; /* Color del texto de los enlaces */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+}
+
+/* Estilo para la sección derecha del pie de página */
+.footer-distributed .footer-right {
+    width: 30%; /* Ancho del 30% para la sección derecha */
+}
+
+/* Estilo para la descripción de la empresa en el pie de página */
+.footer-distributed .footer-company-about {
+    line-height: 20px; /* Altura de línea para el texto de la descripción */
+    color: #92999f; /* Color del texto de la descripción */
+    font-size: 13px; /* Tamaño de fuente de la descripción */
+    font-weight: normal; /* Peso normal de la fuente de la descripción */
+    margin: 0; /* Elimina el margen de la descripción */
+}
+
+/* Estilo para el span dentro de la descripción de la empresa */
+.footer-distributed .footer-company-about span {
+    display: block; /* Muestra el span como bloque */
+    color: #ffffff; /* Color del texto del span */
+    font-size: 18px; /* Tamaño de fuente del span */
+    font-weight: bold; /* Peso en negrita del texto del span */
+    margin-bottom: 20px; /* Margen inferior del span */
+}
+
+/* Estilo para los iconos de redes sociales en el pie de página */
+.footer-distributed .footer-icons {
+    margin-top: 25px; /* Margen superior para los iconos de redes sociales */
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block; /* Muestra los íconos en línea */
+    width: 35px; /* Ancho de los íconos */
+    height: 35px; /* Altura de los íconos */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los íconos */
+    background-color: #33383b; /* Color de fondo de los íconos */
+    border-radius: 2px; /* Borde redondeado de los íconos */
+    font-size: 20px; /* Tamaño de fuente de los íconos */
+    color: #ffffff; /* Color del texto de los íconos */
+    text-align: center; /* Alineación del texto dentro de los íconos */
+    line-height: 35px; /* Altura de línea del texto dentro de los íconos */
+    margin-right: 3px; /* Margen derecho entre los íconos */
+    margin-bottom: 5px; /* Margen inferior entre los íconos */
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #bef202; /* Cambia el color de fondo al pasar el mouse sobre los íconos */
+}
+
+.footer-links a:hover {
+    color: #bef202; /* Cambia el color del texto al pasar el mouse sobre los enlaces */
+}
+
+/* Media query para pantallas con ancho máximo de 880px */
+@media (max-width: 880px) {
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block; /* Muestra las secciones como bloques */
+        width: 100%; /* Ancho completo para cada sección */
+        margin-bottom: 40px; /* Margen inferior entre las secciones */
+        text-align: center; /* Alineación del texto al centro */
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0; /* Elimina el margen izquierdo de los íconos en la sección central */
+    }
+}
