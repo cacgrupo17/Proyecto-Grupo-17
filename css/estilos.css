@@ -581,25 +581,26 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
-  /*-----------------------------------------------------------------------añadir video about--------*/
+
 /* Estilos para el contenedor del video */
 #video-container {
-  width: 450px;
-  height: auto;
-  float: right;  
-  overflow: hidden; /* Oculta las barras de desplazamiento */
-  margin-right: 1cm;
-  
+  width: 350px; /* Ancho fijo del contenedor */
+  height: 500px; /* La altura se ajustará automáticamente según el contenido (en este caso, el video) */
+  position: fixed; /* Hace que el contenedor sea fijo en la pantalla */
+  top: 50%; /* Ubica el contenedor en la mitad superior de la ventana */
+  right: 1cm; /* Margen derecho de 1 centímetro */
+  transform: translateY(-50%); /* Centra verticalmente el contenedor */
+  z-index: 999; /* Asegura que el contenedor esté por encima de otros elementos */
+  margin-bottom: 20px; /* Margen inferior para dejar espacio debajo del video */
 }
 
 /* Estilos para el video */
 #video {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover; /* Escala el video para llenar el contenedor */
 }
-
-/*-----------------------------------------------------------------------añadir video--------*/
+/* Fin */
 
 /* Estilos para los títulos */
 #sobre-nosotros h1, #sobre-nosotros h2 {
