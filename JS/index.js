@@ -1,13 +1,13 @@
 /* este bloque corre en pagina CONTACTO*/ 
 
 function calcularEstadia() {
-  var nombre = document.getElementById("nombre").value;
+  const nombre = document.getElementById("nombre").value;
 
-  var fechaLlegadaInput = document.getElementById("fecha_llegada");
-  var fechaSalidaInput = document.getElementById("fecha_salida");
+  const fechaLlegadaInput = document.getElementById("fecha_llegada");
+  const fechaSalidaInput = document.getElementById("fecha_salida");
 
-  var fechaLlegada = new Date(fechaLlegadaInput.value);
-  var fechaSalida = new Date(fechaSalidaInput.value);
+  const fechaLlegada = new Date(fechaLlegadaInput.value);
+  const fechaSalida = new Date(fechaSalidaInput.value);
 
 /* Validar si se ingresó el nombre de la mascota */
     if (nombre.trim() === "") {
@@ -16,7 +16,7 @@ function calcularEstadia() {
     }
 
 /* Validar si la fecha de llegada es anterior al día actual*/
-    var fechaActual = new Date();
+    const fechaActual = new Date();
     if (fechaLlegada < fechaActual) {
       alert("La fecha de llegada no puede ser anterior al día actual.");
       return;
@@ -28,9 +28,9 @@ function calcularEstadia() {
       return;
     }
     
-  var precioDiario = 7500;
-  var diasReserva = Math.round((fechaSalida - fechaLlegada) / (1000 * 60 * 60 * 24)) + 1;
-  var precioTotal = diasReserva * precioDiario;
+  const precioDiario = 7500;
+  const diasReserva = Math.round((fechaSalida - fechaLlegada) / (1000 * 60 * 60 * 24)) + 1;
+  const precioTotal = diasReserva * precioDiario;
 
   if (document.getElementById("cuidados_especiales").checked) {
     precioTotal += 300 * diasReserva;

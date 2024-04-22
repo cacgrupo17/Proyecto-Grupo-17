@@ -160,7 +160,7 @@
  #testimonios li {
   width: 40%;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #f7f7f7;
   border-radius: 4px;
   margin-bottom: 20px;
  }
@@ -387,7 +387,7 @@
     width: 100%;
   }
  }
- /*------------------------------------------*/
+
  .contenedor-centrado {
   text-align: center;
 }
