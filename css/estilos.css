@@ -225,7 +225,7 @@
  /* Estilos de la página de contacto */
  #presupuesto {
   padding: 50px 0;
-  background-image: url("../imagenes/Vizsla.jpeg");
+  background-image: url("../imagenes/Vizsla-min.jpeg");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -387,7 +387,16 @@
     width: 100%;
   }
  }
- 
+ /*------------------------------------------*/
+ .contenedor-centrado {
+  text-align: center;
+}
+
+.contenido-centrado {
+  display: flex;
+  text-align: left;
+}
+
  /* Estilos de la página de galería */
  #carrete-perros {
   padding: 50px 0;
@@ -568,7 +577,10 @@
   font-weight: bold;
   font-size: 16px;
  }
- /*------------------------------------------------------------------------------------------------*/
+
+
+
+
 /* Estilos para la sección */
 #sobre-nosotros {
   width: 60%;
@@ -646,5 +658,6 @@
 }
 
 /*------------------------------------------------------------------------------------------------*/
+
 
 /*------------------------------------------------------------------------------------------------*/
