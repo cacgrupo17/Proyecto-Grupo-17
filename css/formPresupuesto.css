@@ -71,7 +71,7 @@
 }
 
 .imagen-container {
-  width: 200px; /* Corrección: se agrega 'px' */
+  width: 200px;
   height: auto;
   position: relative;
   text-align: center;
@@ -84,11 +84,15 @@
   object-fit: cover;
 }
 
-.imagen-container input[type="radio"] {
-  display: block;
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
+.radio-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.radio-buttons input[type="radio"] {
+  display: inline-block;
+  margin: 0 5px;
 }
 
 .required::after {
