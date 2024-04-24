@@ -64,7 +64,6 @@
 }
 
 /*----------------------------------------------------------------*/
-
 .tamano {
   display: flex;
   justify-content: space-between;
@@ -72,11 +71,11 @@
 }
 
 .imagen-container {
-  width: 200;
+  width: 200px; /* Corrección: se agrega 'px' */
   height: auto;
   position: relative;
   text-align: center;
-   margin-right: 80px; 
+  margin-right: 80px;
 }
 
 .imagen-container img {
@@ -93,13 +92,9 @@
 }
 
 .required::after {
-  content:"*";
+  content: "\*";
   color: red;
 }
-
-
-
-
 
 /*------------------------------------------------------------------*/
 #peso-contenedor label {
@@ -121,6 +116,5 @@
 #peso option:not(:checked) {
   color: #ccc;
 }
+
 /*-----------------------------------------------------------------------------------*/
-
-
