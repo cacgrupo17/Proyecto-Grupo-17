@@ -1,3 +1,4 @@
+/*estilos.css*/
 /* Estilos generales */
 * {
   box-sizing: border-box;
@@ -224,7 +225,7 @@
 
  /* Estilos de la página de contacto */
  #presupuesto {
-  padding: 50px 0;
+  padding: 70px 0;
   background-image: url("../imagenes/Vizsla-min.jpeg");
 
   background-repeat: no-repeat;
@@ -388,14 +389,6 @@
   }
  }
 
- .contenedor-centrado {
-  text-align: center;
-}
-
-.contenido-centrado {
-  display: flex;
-  text-align: left;
-}
 
  /* Estilos de la página de galería */
  #carrete-perros {
@@ -656,8 +649,3 @@
   font-family: 'Lucida Sans';
   font-size: 32px;
 }
-
-/*------------------------------------------------------------------------------------------------*/
-
-
-/*------------------------------------------------------------------------------------------------*/

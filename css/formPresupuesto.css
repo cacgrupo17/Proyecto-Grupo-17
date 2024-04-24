@@ -1,0 +1,126 @@
+/* Archivo formPresupuesto.css */
+#formulario {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+  margin-right: 3cm;
+}
+
+#formulario label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #131212;
+  display: block;
+}
+
+#formulario input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+#formulario button {
+  background-color: #0f3969;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+#formulario button:hover {
+  background-color: #33b5e5;
+}
+
+#formulario .total {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+#formulario .total label {
+  font-weight: normal;
+  color: #333;
+  display: block;
+}
+
+#formulario .total input {
+  font-weight: bold;
+  border: none;
+  background-color: #f7f7f7;
+  font-size: 18px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/*----------------------------------------------------------------*/
+
+.tamano {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imagen-container {
+  width: 200;
+  height: auto;
+  position: relative;
+  text-align: center;
+   margin-right: 80px; 
+}
+
+.imagen-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imagen-container input[type="radio"] {
+  display: block;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.required::after {
+  content:"*";
+  color: red;
+}
+
+
+
+
+
+/*------------------------------------------------------------------*/
+#peso-contenedor label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #0e0d0d;
+  display: block;
+}
+
+#peso {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+#peso option:not(:checked) {
+  color: #ccc;
+}
+/*-----------------------------------------------------------------------------------*/
+
+
