@@ -18,20 +18,30 @@
 </head>
 <body>
   <header>
+    <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
+        <!-- Logo (enlace a la página de inicio) -->
         <a href="index.html">
           <img src="imagenes/Canopolis.png" alt="Canópolis" height="70" width="70">
         </a>
+  
+        <!-- Botón de hamburguesa para menú responsive -->
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+  
+        <!-- Contenedor del menú desplegable (offcanvas) -->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Canópolis</h5>
+            <!-- Botón para cerrar el menú desplegable -->
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
+  
+          <!-- Cuerpo del menú desplegable -->
           <div class="offcanvas-body">
+            <!-- Lista de elementos del menú -->
             <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
               <li class="nav-item">
                 <a class="nav-link mx-lg-2 active" aria-current="page" href="index.html">Inicio</a>
@@ -56,45 +66,73 @@
   </header>
 
   <main>
+    <!-- Sección Bienvenidos -->
     <section id="bienvenidos">
+      <!-- Imagen principal -->
       <img src="imagenes/jardin.jpg" alt="Perros_jardín" height="500" width="800">
+      <!-- Título de la sección -->
       <h2>¡Bienvenidos a Canópolis!</h2>
+      <!-- Primer párrafo de introducción -->
       <p>Somos un pensionado canino que ofrece un espacio seguro y lleno de cariño para tu mejor amigo mientras estás fuera.</p>
+      <!-- Segundo párrafo de introducción -->
       <p>Contamos con amplios espacios verdes, áreas de juego y descanso, y una piscina climatizada para que tu perro se divierta y se refresque.</p>
       <br>
+      <!-- Enlace para conocer más sobre Canópolis -->
       <a href="servicios.html">Conoce más sobre nosotros</a>
     </section>
-
+  
+    <!-- Sección Nuestros Servicios -->
     <section id="servicios">
+      <!-- Título de la sección -->
       <h2>Nuestros Servicios</h2>
+      <!-- Lista de servicios -->
       <ul>
+        <!-- Primer servicio -->
         <li>
+          <!-- Imagen del servicio -->
           <img src="imagenes/cariño.jpeg" alt="Perro recibiendo cariño" height="300" width="600">
+          <!-- Título del servicio -->
           <h3>Cuidado personalizado</h3>
+          <!-- Descripción del servicio -->
           <p>Nos adaptamos a las necesidades de cada perro para que se sienta como en casa.</p>
         </li>
+        <!-- Segundo servicio -->
         <li>
+          <!-- Imagen del servicio -->
           <img src="imagenes/jugando.jpg" alt="Perros jugando en la piscina" height="300" width="600">
+          <!-- Título del servicio -->
           <h3>Diversión y entretenimiento</h3>
+          <!-- Descripción del servicio -->
           <p>Amplios espacios verdes, áreas de juego y piscina climatizada para que tu perro se divierta.</p>
         </li>
+        <!-- Tercer servicio -->
         <li>
+          <!-- Imagen del servicio -->
           <img src="imagenes/peluquera.jpg" alt="Veterinario revisando a un perro" height="300" width="600">
+          <!-- Título del servicio -->
           <h3>Atención veterinaria</h3>
+          <!-- Descripción del servicio -->
           <p>Visitas regulares de veterinarios y prácticas de estudiantes para cuidar la salud de tu perro.</p>
         </li>
       </ul>
     </section>
-
+  
+    <!-- Sección Testimonios -->
     <section id="testimonios">
+      <!-- Título de la sección -->
       <h2>Testimonios</h2>
+      <!-- Lista de testimonios -->
       <ul>
+        <!-- Primer testimonio -->
         <li>
+          <!-- Bloque de cita -->
           <blockquote>
             "Mi perro Toby se queda encantado en Canópolis. Siempre vuelve feliz y cansado de jugar." - Ana García
           </blockquote>
         </li>
+        <!-- Segundo testimonio -->
         <li>
+          <!-- Bloque de cita -->
           <blockquote>
             "Canópolis es el mejor lugar para dejar a mi perro cuando estoy de viaje. Sé que está en buenas manos y que se lo pasa genial." - Juan Pérez
           </blockquote>
@@ -104,10 +142,13 @@
   </main>
 
   <!-- Footer -->
-  <footer class="footer-distributed">    
-    <div class="footer-left"> <!-- Contenedor izquierdo del pie de página -->        
-        <h3><span>Canópolis</span></h3> <!-- Encabezado con nombre del sitio -->        
-        <p class="footer-links"> <!-- Enlaces de navegación del pie de página -->
+  <footer class="footer-distributed">   
+    <!-- Contenedor izquierdo del pie de página -->  
+    <div class="footer-left">     
+        <!-- Encabezado con nombre del sitio -->    
+        <h3><span>Canópolis</span></h3>
+        <!-- Enlaces de navegación del pie de página -->       
+        <p class="footer-links"> 
             <a href="index.html">Inicio</a>
             | <!-- Separador entre enlaces -->
             <a href="servicios.html">Servicios</a><br>
@@ -117,15 +158,18 @@
             <a href="about.html">Sobre Nosotros</a><br>
             
             <a href="contacto.html">Contacto</a>
-        </p>        
-        <p class="footer-company-name"> <!-- Texto de derechos de autor -->
+        </p>
+        <!-- Texto de derechos de autor -->        
+        <p class="footer-company-name"> 
             Copyright © 2024  Pensionado Canópolis <br>
             Todos los derechos reservados
         </p>
     </div>
     
-    <div class="footer-center"> <!-- Contenedor central del pie de página -->        
-        <div><!-- Información de contacto -->
+    <!-- Contenedor central del pie de página -->
+    <div class="footer-center">
+      <!-- Información de contacto -->         
+        <div>
             <i class="map-marker"></i>
             <p><span>Av. Siempreviva 1234</span>
                 Springfield</p>
@@ -140,20 +184,24 @@
         </div>
     </div>
 
-    <div class="footer-right"> <!-- Contenedor derecho del pie de página -->        
-        <p class="footer-company-about"> <!-- Información sobre la empresa -->
+    <!-- Contenedor derecho del pie de página -->   
+    <div class="footer-right">
+      <!-- Información sobre la empresa -->      
+        <p class="footer-company-about"> 
             <span>Más que un Pensionado</span>
             <strong>En Canópolis</strong>, queremos que tu perro se sienta como parte de nuestra familia. 
             Por eso, nos preocupamos por su bienestar físico y emocional, y les ofrecemos una atención 
             personalizada y llena de cariño.
-        </p>        
-        <div class="footer-icons"> <!-- Iconos de redes sociales -->
+        </p>
+        <!-- Iconos de redes sociales -->        
+        <div class="footer-icons"> 
             <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
             <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
             <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
         </div>
     </div>
   </footer>
+  
   <!-- Enlace JS -->
   <script src="js/index.js" defer></script>
   <!-- Boostrap JS -->
