@@ -649,3 +649,74 @@
   font-family: 'Lucida Sans';
   font-size: 32px;
 }
+
+/* Edicion html servicios */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
+  grid-template-rows: repeat(3, 1fr); /* 3 filas de altura 100px */
+  gap: 30px 30px; /* Espacio entre las celdas */
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 0px 40px;
+}
+
+.grid-item {
+  height: 370px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item > h3 {
+  font-size: 1.5em;
+  margin-top: 15px;
+  color: #2c3e50;
+}
+
+.grid-item > img {
+  width: 120px;
+  height: 120px;
+  vertical-align: middle;
+}
+
+.grid-item > p {
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media screen and (min-width: 667px) and (max-width:1023px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas de hasta 768px */
+    grid-template-rows: repeat(4, 1fr); /* 4 filas */;
+  }
+  .grid-item {
+    height: 390px;
+  }
+}
+@media screen and (max-width: 666px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+  }
+  .grid-item {
+    height: 360px;
+  }
+}
+
+.header-servicios {
+  background-image: url("https://steemitimages.com/DQmTavXuDc679Fdu1BxRFRW998uGfi4sNnc3BUqNQp2wxe6/perros-banner.jpg");
+  margin: 0px 40px;
+  background-repeat: no-repeat;
+  height: 400px;
+  opacity: 0.9;
+  text-align: right;
+  background-position: center center;
+  background-size: cover;
+}
