@@ -3,17 +3,31 @@
 /* Escritorio */
 @media (min-width: 1024px) {
   /* Estilos para escritorio */
+
+
   }
   
 /* Tablet */
 @media (max-width: 1023px) and (min-width: 768px) {
   /* Estilos para tablet */
+    #presupuesto .imagen-mascota,
+    #formulario {
+      float: none;
+      width: 100%;
+    }
+    .col-md-4 {
+      width: 100%;
+    }
   }
+
+  
   
 /* Móvil */
 @media (max-width: 767px) {
   /* Estilos para móvil */
+
+  
   }
 
   /*-------------------------------------------------------------------*/
-  /* Estilos para responsive design */
+

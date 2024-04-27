@@ -55,57 +55,52 @@
       </div>
     </nav>
   </header>
-  
   <main>
     <section id="presupuesto">
       <p>Reserva su lugar hoy mismo y disfruta de la tranquilidad saber que tu perro estará en las mejores manos.</p>
       <h1>Cotiza la estadía</h1>
 
       <form id="formulario" style="display: flex; flex-direction: column;">
-        <label for="nombre">Nombre de la mascota<span class="required"></span>:</label>
+        <label for="nombre">Nombre de la mascota:<span class="required"></span></label>
         <input type="text" id="nombre" placeholder="Nombre de la mascota" value="" onfocus="if (this.placeholder == 'Nombre de la mascota') this.placeholder = ''" onblur="if (this.placeholder == '') this.placeholder = 'Nombre de la mascota'" required>
        
-        <label for="fecha_llegada">Fecha de llegada<span class="required"></span>:</label>
+        <label for="fecha_llegada">Fecha de llegada:<span class="required"></span></label>
         <input type="date" id="fecha_llegada" required>
        
-        <label for="fecha_salida">Fecha de salida<span class="required"></span>:</label>
+        <label for="fecha_salida">Fecha de salida:<span class="required"></span></label>
         <input type="date" id="fecha_salida" required>
        
         <div id="tamano-mascota">
-          <label for="nombre">Seleccione el tamaño de su mascota <span class="required"></span>:</label>
-          <br>
+          <label for="nombre">Seleccione el tamaño de su mascota:<span class="required"></span></label>
+       
+          
           <div class="tamanios">
-            <div class="tamano">
-              
-              <div class="imagen-container">
-                <img src="imagenes/chico1.jpg" alt="Chico">
-                <br>
-                <br>
+            <div class="tamano">  
+
+              <div class="imagen-container1">
+                <img src="imagenes/chico3.svg" alt="Chico">
                 <h6>Chico</h6>
-                <input type="radio" name="tamano" value="chico" id="chico" required>
+                <input type="radio" name="size" id="chico" required>
               </div>
 
-              <div class="imagen-container">
-                <img src="imagenes/mediano.png" alt="Mediano">
-                <br>
+              <div class="imagen-container2">
+                <img src="imagenes/mediano3.svg" alt="Mediano">
                 <h6>Mediano</h6>
-                <input type="radio" name="tamano" value="mediano" id="mediano" required>
+                <input type="radio" name="size" id="mediano" required>
               </div>
 
-              <div class="imagen-container">
-                <img src="imagenes/grande.png" alt="Grande">
-                <br>
+              <div class="imagen-container3">
+                <img src="imagenes/grande3.svg" alt="Grande">
                 <h6>Grande</h6>
-                <input type="radio" name="tamano" value="grande" id="grande" required>
+                <input type="radio" name="size" id="grande" required>
               </div>
 
             </div>
           </div>
-          <br>
         </div>
        
         <div id="peso-contenedor">
-          <label for="peso">Seleccione el rango de peso:</label>
+          <label for="peso">Seleccione el rango de peso:<span class="required"></span></label>
           <select id="peso" required disabled>
             <option value="" disabled selected>Seleccione un rango</option>
             <option value="0-10">de 0 a 10 kg</option>
@@ -115,10 +110,10 @@
         </div>
        
         <div style="display: flex; align-items: center;">
-          <label style="margin-right: 0.5cm; display: inline-block;" for="cuidados_especiales">¿Requiere cuidados especiales?</label>
-          <input type="checkbox" id="cuidados_especiales">
+          <label for="cuidados_especiales" class="inline-label">¿Requiere cuidados especiales?</label>
+          <input type="checkbox" id="cuidados_especiales" class="inline-checkbox">
         </div>
-        <br>
+          
         <button type="button" onclick="calcularEstadia()" style="margin-top: 1cm; margin-bottom: 1cm; align-self: center;">Calcular</button>
         <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
           <div style="width: 45%;">
