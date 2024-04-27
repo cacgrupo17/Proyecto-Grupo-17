@@ -9,16 +9,19 @@ const cuidadosEspecialesCheckbox = document.getElementById('cuidados_especiales'
 const totalDiasInput = document.getElementById('total_dias');
 const montoTotalInput = document.getElementById('total_monto');
 
-// Función para validar el nombre de la mascota
-function validarNombre(nombre) {
-  const regexNombre = /^[a-zA-ZñÑ\s]+$/;
-  return regexNombre.test(nombre);
-}
 
-// Función para validar la fecha de llegada
+// Verificar si el carácter no es una letra ni un espacio en blanco
+    function validarNombre(nombre) {
+      return /^[a-zA-Z\sÑñ]+$/.test(nombre);
+}
+    
+
 function validarFechaLlegada(fechaLlegada) {
   const fechaActual = new Date();
-  return fechaLlegada >= fechaActual;
+  fechaActual.setHours(0, 0, 0, 0); // Establecer las horas de la fecha actual a 0 (medianoche)
+  fechaLlegada.setHours(0, 0, 0, 0); // Establecer las horas de la fecha de llegada a 0 (medianoche)
+
+  return fechaLlegada >= fechaActual; // Devolver true si la fecha de llegada es igual o posterior a la fecha actual
 }
 
 // Función para validar la fecha de salida
@@ -84,6 +87,10 @@ function calcularEstadia() {
     alert('Canólopis te sugiere que selecciones el tamaño de la mascota.');
     return;
   }
+  if (!peso) {
+    alert('Canólopis te sugiere que selecciones el peso de la mascota.');
+    return;
+  }
 
   // Cálculos
   const dias = calcularDias(fechaLlegada, fechaSalida);
@@ -91,8 +98,9 @@ function calcularEstadia() {
 
   // Mostrar resultados
   totalDiasInput.value = dias;
-  montoTotalInput.value = montoTotal.toFixed(2);
+  montoTotalInput.value = "$"+ " " + montoTotal.toFixed(2);
 }
+montoTotalInput.value = "$" + montoTotalInput.value;
 
 // Habilitar/deshabilitar el campo de peso según la selección del tamaño
 tamanoRadioButtons.forEach(radioButton => {

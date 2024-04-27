@@ -57,10 +57,11 @@
   </header>
   <main>
     <section id="presupuesto">
-      <p>Reserva su lugar hoy mismo y disfruta de la tranquilidad saber que tu perro estará en las mejores manos.</p>
+      <p>¡Garantiza ahora el bienestar de tu perro y relájate con total confianza!</p>
       <h1>Cotiza la estadía</h1>
 
       <form id="formulario" style="display: flex; flex-direction: column;">
+        <br>
         <label for="nombre">Nombre de la mascota:<span class="required"></span></label>
         <input type="text" id="nombre" placeholder="Nombre de la mascota" value="" onfocus="if (this.placeholder == 'Nombre de la mascota') this.placeholder = ''" onblur="if (this.placeholder == '') this.placeholder = 'Nombre de la mascota'" required>
        
@@ -101,7 +102,7 @@
        
         <div id="peso-contenedor">
           <label for="peso">Seleccione el rango de peso:<span class="required"></span></label>
-          <select id="peso" required disabled>
+          <select id="peso" required>
             <option value="" disabled selected>Seleccione un rango</option>
             <option value="0-10">de 0 a 10 kg</option>
             <option value="14-27">de 14 a 27 kg</option>
@@ -132,7 +133,7 @@
     </section>
   </main>
   
-  <section class="contacto">
+  <section class="contacto" class="grid-container">
     <h2>Contáctanos</h2>
     <form action="#">
       <input type="text" placeholder="Nombre">

@@ -1,10 +1,12 @@
 /* Archivo formPresupuesto.css */
 #formulario {
-  background-color: #b9b9b9;
+  background-color: #a09a9a94;
   border: #c1c2c1 8px outset;
   padding: 20px;
-  border-radius: 7px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 3px 10px;
+  border: #3f4e3d 5px double;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   max-width: 500px;
   margin: 0 auto;
   margin-right: 3cm;
@@ -50,7 +52,7 @@
 
 #formulario .total label {
   font-weight: normal;
-  color: #333;
+  color: #3a3939;
   display: block;
 }
 
@@ -108,18 +110,6 @@
   display: block;
 }
 
-.radio-buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.radio-buttons input[type="radio"] {
-  display: inline-block;
-  margin: 0 5px;
-}
-
-
 .required::after {
   content: "*"; /* Agrega el asterisco */
   color: red; 
@@ -143,8 +133,11 @@
   font-size: 16px;
 }
 
-#peso option:not(:checked) {
-  color: #ccc;
+#peso option{
+  color: #797777;
+}
+#peso option:checked {
+  color: #1c0444;
 }
 
 
@@ -191,7 +184,7 @@
   margin-left: 5cm;
   font-size: 2em;
   font-weight: 800;
-  text-shadow: 2px 2px 3px #141414fb;
+  text-shadow: 2px 2px 3px #131212de;
  }
  
  #presupuesto h1 {
@@ -253,7 +246,7 @@
  }
  
  #presupuesto .boton-reserva {
-  background-color: #007bff;
+  background-color: #052f5c;
   color: #fff;
   padding: 10px 20px;
   border-radius: 4px;
