@@ -20,7 +20,57 @@
     }
   }
 
-  
+  /* Estilos específicos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .offcanvas {
+    width: 80%;
+  }
+
+  .offcanvas-body {
+    background-color: #333;
+    padding: 20px;
+  }
+
+  .offcanvas-body a {
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .offcanvas-header button {
+    color: #fff;
+  }
+
+  .navbar {
+    grid-template-columns: auto;
+    justify-content: space-between;
+  }
+
+  .navbar-nav {
+    display: none;
+    grid-template-columns: auto;
+  }
+
+  .navbar-collapse {
+    display: grid;
+    gap: 20px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    padding: 0 10px;
+  }
+}
+
   
 /* Móvil */
 @media (max-width: 767px) {

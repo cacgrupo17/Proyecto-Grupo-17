@@ -1,4 +1,85 @@
 /* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#video-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+header {
+  background-color: #333;
+  padding: 20px 0;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: 50px;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.navbar-nav {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  justify-content: end;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.footer-distributed {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  padding: 0 20px;
+}
+
+.footer-company-name {
+  margin-top: 20px;
+}
+
+.footer-icons a {
+  color: #fff;
+  margin-right: 20px;
+}
+
+
+
+
+/*.........................................................................................*/
+/* Estilos generales */
 * {
   box-sizing: border-box;
 }
