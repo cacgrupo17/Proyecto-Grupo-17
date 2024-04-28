@@ -665,6 +665,10 @@ main {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
+#servicios h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
 }
 
 .header-servicios {
