@@ -203,6 +203,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0;
+  padding: 0;
 }
 
 #servicios li {
@@ -656,19 +657,31 @@ main {
     flex-direction: column;
     justify-content: space-around;
     margin: 0;
+    padding: 20px;
     align-items: center;
-}
-#servicios li {
-  width: auto;
-  text-align: center;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-#servicios h2 {
-  margin-bottom: 30px;
-  text-align: center;
-}
+  }
+  #servicios li {
+    width: auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  #servicios h2 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  #testimonios h2 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  #testimonios ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+  }
 }
 
 .header-servicios {
