@@ -650,6 +650,21 @@ main {
     display: none;
     /* Oculta el contenedor del video */
   }
+  #servicios ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+    align-items: center;
+}
+#servicios li {
+  width: auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
 }
 
 .header-servicios {
