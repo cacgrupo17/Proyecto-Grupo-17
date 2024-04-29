@@ -6,22 +6,29 @@
 
 
   }
+
+  
+
+
+
   
 /* Tablet */
 @media (max-width: 1023px) and (min-width: 768px) {
   /* Estilos para tablet */
-    #presupuesto .imagen-mascota,
-    #formulario {
-      float: none;
-      width: 100%;
-    }
-    .col-md-4 {
-      width: 100%;
-    }
-  }
+
+
+
+
+
+}
+
+
+
+
+
 
   /* Estilos específicos para dispositivos móviles */
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
   .navbar-toggler {
     display: block;
   }
@@ -69,15 +76,33 @@
   .footer-right {
     padding: 0 10px;
   }
-}
 
-  
-/* Móvil */
-@media (max-width: 767px) {
-  /* Estilos para móvil */
 
-  
+  #formulario {
+    max-width: 100%;
+    margin-right: 0;
   }
 
-  /*-------------------------------------------------------------------*/
+  .tamano {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+  }
 
+  .imagen-container1 img,
+  .imagen-container2 img,
+  .imagen-container3 img {
+    width: 50px;
+  }
+
+  #presupuesto p {
+    margin-left: 1cm;
+    font-size: 1.5em;
+  }
+
+  #presupuesto h1 {
+    margin-right: 1cm;
+    font-size: 24px;
+  }
+
+}
