@@ -168,9 +168,10 @@
 .imagen-container input[type="radio"] {
   margin-top: 5px; /* Espacio entre el texto y el radiobutton */
 }
- /* Estilos de la página de contacto */
+
+
  #presupuesto {
-  padding: 10px 0;
+  padding: 20px 0;
   background-image: url("https://i.ibb.co/9cthmFC/Viszla.jpg"); /* URL directa de la imagen */
   background-repeat: no-repeat;
   background-size: cover; /* La imagen se ajusta para cubrir completamente el contenedor, manteniendo la relación de aspecto */
@@ -179,7 +180,7 @@
 }
 
  #presupuesto p {
-  color: #f7f5f5;
+  color: #f5f2f2;
   text-align: left;
   margin-left: 5cm;
   font-size: 2em;
@@ -189,11 +190,11 @@
  
  #presupuesto h1 {
   margin-bottom: 30px;
-  color: #eef1f7;
+  color: #fbfbfc;
   text-align: right;
-  font-size: 36px;
-  margin-right: 6cm;
-  text-shadow: 1px 1px 2px #1a1919;
+  font-size: 32px;
+  margin-right: 4.5cm;
+  text-shadow: 2px 2px 2px #0e0d0d;
  }
  
  #presupuesto .imagen-mascota {
