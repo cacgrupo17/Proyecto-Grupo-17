@@ -136,6 +136,8 @@
     color: #1c1c1d;
   }
 
+/* Estilos About */
+/* Estilos para el contenedor del video */
   #video-container {
     width: 160px; /* Ancho de 450px */
     height: 800px; /* Altura ajustada automáticamente según el contenido */
@@ -151,9 +153,7 @@
   }
 }
 
-/* Estilos About */
 
-/* Estilos para el contenedor del video */
 
 
 
