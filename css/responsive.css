@@ -81,8 +81,6 @@
 
  /*Contacto */
 
-
-
   #formulario label {
     font-weight: bold;
     margin-bottom: 5px;
@@ -109,7 +107,6 @@
     width: 90px;
   }
 
-
   #presupuesto {
     padding: 20px 0;
     background-image: url("../imagenes/FForm.jpg"); /* Ruta relativa */
@@ -119,14 +116,12 @@
     margin: 0; /* Asegura que no haya margen alrededor del contenedor */
 }
 
-
   #presupuesto p {
     margin-left: 1cm;
     font-size: 30px;
     justify-content: center;
     text-shadow: 1px 1px 2px #180101;
   }
-
 
   #presupuesto h1 {
     font-size: 30px;
@@ -140,7 +135,7 @@
 /* Estilos para el contenedor del video */
   #video-container {
     width: 150px; /* Ancho de 450px */
-    height: 900px; /* Altura ajustada automáticamente según el contenido */
+    height: 1000px; /* Altura ajustada automáticamente según el contenido */
     position: fixed; /* Hace que el contenedor sea fijo en la pantalla */
     top: 50%; /* Ubica el contenedor en la mitad superior de la ventana */
     right: 0; /* Separación de 1cm desde el margen derecho */
@@ -149,9 +144,18 @@
     display: flex; /* Usa flexbox para centrar el video */
     justify-content: center; /* Centra horizontalmente el video dentro del contenedor */
     align-items: center; /* Centra verticalmente el video dentro del contenedor */
-    background-color: #0134366c; /* Color de fondo con 50% de opacidad */
+    background-color: #0127296c; /* Color de fondo con 50% de opacidad */
   }
-
+  #sobre-nosotros {
+    width: 55%;
+    right: 55%;
+    margin-left: 0.5cm;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 
 }
 

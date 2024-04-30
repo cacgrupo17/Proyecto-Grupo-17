@@ -579,7 +579,7 @@ main {
   display: flex; /* Usa flexbox para centrar el video */
   justify-content: center; /* Centra horizontalmente el video dentro del contenedor */
   align-items: center; /* Centra verticalmente el video dentro del contenedor */
-  background-color: #0134366c; 
+  background-color: #0134366c; /* Color de fondo con 50% de opacidad */
 }
 
 
