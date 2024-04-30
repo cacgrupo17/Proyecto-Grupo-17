@@ -331,8 +331,8 @@ img {
    .flip-card {
     border-style: hidden;
     background-color: transparent;
-    width: 220px;
-    height: 220px;
+    width: 350px;
+    height: 350px;
     perspective: 1000px;
   }
   
@@ -579,7 +579,7 @@ main {
   display: flex; /* Usa flexbox para centrar el video */
   justify-content: center; /* Centra horizontalmente el video dentro del contenedor */
   align-items: center; /* Centra verticalmente el video dentro del contenedor */
-  background-color: #0134366c; /* Color de fondo con 50% de opacidad */
+  background-color: #3614016c; /* Color de fondo con 50% de opacidad */
 }
 
 

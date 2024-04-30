@@ -172,12 +172,13 @@
 
  #presupuesto {
   padding: 20px 0;
-  background-image: url("https://i.ibb.co/9cthmFC/Viszla.jpg"); /* URL directa de la imagen */
+  background-image: url("https://i.ibb.co/5TynjV7/Lorenzo.jpg"); /* URL directa de la imagen */
   background-repeat: no-repeat;
   background-size: cover; /* La imagen se ajusta para cubrir completamente el contenedor, manteniendo la relación de aspecto */
   background-position: center; /* La imagen se centra dentro del contenedor */
   margin: 0; /* Asegura que no haya margen alrededor del contenedor */
 }
+
 
  #presupuesto p {
   color: #f5f2f2;
