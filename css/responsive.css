@@ -109,24 +109,19 @@
 
   #presupuesto {
     padding: 10px 0;
-    background-image: url("../imagenes/FForm.jpg"); /* Ruta relativa */
+    background-image: url("https://i.ibb.co/7rdHbgw/mo-o.png"); /* Ruta relativa */
     background-repeat: no-repeat;
     background-size: cover; /* La imagen se ajusta dentro del contenedor */
     background-position: center; /* La imagen se centra dentro del contenedor */
     margin: 0; /* Asegura que no haya margen alrededor del contenedor */
 }
 
+ 
 
-  #presupuesto p {
-    margin-left: 1cm;
-    font-size: 30px;
-    justify-content: center;
-    text-shadow: 1px 1px 2px #180101;
-  }
 
   #presupuesto h1 {
-    font-size: 40px;
-    margin-right: 4cm;
+    font-size: 30px;
+    margin-right: 2.5cm;
     margin-left: 0.7cm;
     text-shadow: 1px 1px 2px #f8f6f6;
     color: #1c1c1d;

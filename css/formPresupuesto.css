@@ -171,31 +171,32 @@
 
 
  #presupuesto {
-  padding: 20px 0;
-  background-image: url("https://i.ibb.co/5TynjV7/Lorenzo.jpg"); /* URL directa de la imagen */
+  padding: 5px 0;
+  background-image: url("https://i.ibb.co/JmMJ0rQ/150.png"); /* URL directa de la imagen */
+  background-size: 800px auto; /* Reducir el tamaño de la imagen al 50% del tamaño original */
   background-repeat: no-repeat;
-  background-size: cover; /* La imagen se ajusta para cubrir completamente el contenedor, manteniendo la relación de aspecto */
-  background-position: center; /* La imagen se centra dentro del contenedor */
-  margin: 0; /* Asegura que no haya margen alrededor del contenedor */
-}
+  background-color: #e3f4f5;
+  background-size: contain; /* La imagen se ajusta para cubrir completamente el contenedor, manteniendo la relación de aspecto */
+  background-position: left; /* La imagen se centra dentro del contenedor */
+ }
 
-
+ 
  #presupuesto p {
-  color: #f5f2f2;
+  color: #000000;
+  margin-left: 0.5cm;
+  font-size: 3em;
   text-align: left;
-  margin-left: 5cm;
-  font-size: 2em;
   font-weight: 800;
-  text-shadow: 2px 2px 3px #131212de;
+  text-shadow: 2px 2px 3px #5bf4ffde;
  }
  
  #presupuesto h1 {
   margin-bottom: 30px;
-  color: #fbfbfc;
+  color: #000000;
   text-align: right;
   font-size: 32px;
-  margin-right: 4.5cm;
-  text-shadow: 2px 2px 2px #0e0d0d;
+  margin-right: 4cm;
+  text-shadow: 2px 2px 3px #ff7e4bde;
  }
  
  #presupuesto .imagen-mascota {
