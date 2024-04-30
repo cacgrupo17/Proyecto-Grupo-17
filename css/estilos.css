@@ -579,7 +579,7 @@ main {
   display: flex; /* Usa flexbox para centrar el video */
   justify-content: center; /* Centra horizontalmente el video dentro del contenedor */
   align-items: center; /* Centra verticalmente el video dentro del contenedor */
-  background-color: #00000080; /* Color de fondo con 50% de opacidad */
+  background-color: #0134366c; 
 }
 
 
@@ -592,7 +592,7 @@ main {
 #sobre-nosotros {
   width: 60%;
   margin-right: 60%;
-  margin-left: 1cm;
+  margin-left: 0.5cm;
   padding: 20px;
   box-sizing: border-box;
   background-color: #f8f8f8;

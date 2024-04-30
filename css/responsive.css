@@ -139,8 +139,8 @@
 /* Estilos About */
 /* Estilos para el contenedor del video */
   #video-container {
-    width: 160px; /* Ancho de 450px */
-    height: 800px; /* Altura ajustada automáticamente según el contenido */
+    width: 150px; /* Ancho de 450px */
+    height: 900px; /* Altura ajustada automáticamente según el contenido */
     position: fixed; /* Hace que el contenedor sea fijo en la pantalla */
     top: 50%; /* Ubica el contenedor en la mitad superior de la ventana */
     right: 0; /* Separación de 1cm desde el margen derecho */
@@ -149,8 +149,10 @@
     display: flex; /* Usa flexbox para centrar el video */
     justify-content: center; /* Centra horizontalmente el video dentro del contenedor */
     align-items: center; /* Centra verticalmente el video dentro del contenedor */
-    background-color: #024f55c2; /* Color de fondo con 50% de opacidad */
+    background-color: #0134366c; /* Color de fondo con 50% de opacidad */
   }
+
+
 }
 
 
