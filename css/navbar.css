@@ -6,7 +6,7 @@
 }
 
 .nav-link {
-    color: #000 !important; /* Color del texto de los enlaces de navegación */
+    color: #f8f3f3 !important; /* Color del texto de los enlaces de navegación */
     font-weight: 500 !important; /* Peso de la fuente de los enlaces */
     position: relative !important; /* Posición relativa para los enlaces */
     font-size: 18px !important; /* Tamaño de fuente de los enlaces */

@@ -155,8 +155,53 @@
 
 }
 
+/* Testimonios*/
 
+/* Reglas de medios para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  #testimonios {
+    padding: 5px 0px;
+    width: 95%;
+    height: auto;
+  }
 
+  #testimonios .carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+  }
 
+  #testimonios img {
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
 
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  /* Estilos para dispositivos móviles */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  input, select {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .radio-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .radio-group label {
+    margin-bottom: 5px;
+  }
+}

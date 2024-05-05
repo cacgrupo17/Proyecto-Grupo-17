@@ -103,6 +103,12 @@ h6 {
   margin: 5px 0 12px;
 }
 
+#servicios h2, #testimonios h2 {
+  font-family: 'Verdana', cursive;
+  margin-left: 2cm;
+ }
+
+
 p {
   margin: 0 0 15px;
 }
@@ -228,36 +234,9 @@ img {
   margin: 0;
 }
 
-#testimonios {
-  padding: 50px 0;
-  background-color: #f7f7f7;
-}
 
-#testimonios h2 {
-  margin-bottom: 30px;
-}
 
-#testimonios ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0;
-}
 
-#testimonios li {
-  width: 40%;
-  padding: 20px;
-  border: 1px solid #f7f7f7;
-  border-radius: 4px;
-  margin-bottom: 20px;
-}
-
-#testimonios li blockquote {
-  font-style: italic;
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
 
 /* Estilos del menú y logo */
 .menu ul {
@@ -747,17 +726,7 @@ main {
     margin-bottom: 30px;
     text-align: center;
   }
-  #testimonios h2 {
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  #testimonios ul {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    justify-content: space-evenly;
-  }
+
 }
 
 .header-servicios {
@@ -769,3 +738,5 @@ main {
   text-align: right;
   background-size: fill;
 }
+/*--------------------------------------------------------------------------------*/
+

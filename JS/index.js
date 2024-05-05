@@ -116,3 +116,5 @@ formElement.addEventListener('submit', event => {
   // Validar campos y realizar cálculos aquí
   calcularEstadia();
 });
+
+

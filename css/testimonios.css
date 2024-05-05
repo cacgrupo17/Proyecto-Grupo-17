@@ -1,0 +1,57 @@
+#testimonios {
+  padding: 2px 0px;
+  width: 95%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+
+#testimonios .carousel {
+  display: flex;
+  width: fit-content;
+  position: relative;
+}
+
+#testimonios h2 {
+  font-family: 'Verdana', cursive; 
+  margin-left: 2cm;
+}
+
+#testimonios img {
+  width: 300px; /* Ajusta el ancho de las imágenes */
+  height: 300px; /* Ajusta la altura de las imágenes */
+  padding: 0.5cm ;
+  margin-right: 0.7cm;
+  margin-left: 0.3cm;
+  flex-shrink: 0;
+  transition: transform 0.9s ease-in-out;
+  
+}
+#testimonios .carousel img.enlarge {
+  transform: scale(1.3);
+}
+
+/* Reglas de medios para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  #testimonios {
+    padding: 5px 0px;
+    width: 95%;
+    height: auto;
+  }
+
+  #testimonios .carousel {
+    display: flex;
+    flex-direction: column; /* Cambiar a dirección de columna */
+    align-items: center; /* Centrar horizontalmente */
+    position: relative;
+  }
+
+  #testimonios img {
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-bottom: 10px; /* Espaciado de 1 cm (equivalente a 10px) entre imágenes */
+  }
+}
