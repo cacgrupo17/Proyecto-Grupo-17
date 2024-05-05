@@ -27,9 +27,10 @@
   margin-right: 0.7cm;
   margin-left: 0.3cm;
   flex-shrink: 0;
-  transition: transform 0.9s ease-in-out;
+  transition: transform 0.1s ease-in-out;
   
 }
+
 #testimonios .carousel img.enlarge {
   transform: scale(1.3);
 }

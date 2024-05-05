@@ -175,7 +175,7 @@
   background-image: url("https://i.ibb.co/JmMJ0rQ/150.png"); /* URL directa de la imagen */
   background-size: 800px auto; /* Reducir el tamaño de la imagen al 50% del tamaño original */
   background-repeat: no-repeat;
-  background-color: #e3f4f5;
+  background-color: #f3e39d;
   background-size: contain; /* La imagen se ajusta para cubrir completamente el contenedor, manteniendo la relación de aspecto */
   background-position: left; /* La imagen se centra dentro del contenedor */
  }
