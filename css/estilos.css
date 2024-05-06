@@ -605,6 +605,16 @@ main {
   color: #555;
 }
 
+.header-servicios {
+  background-image: url("https://steemitimages.com/DQmTavXuDc679Fdu1BxRFRW998uGfi4sNnc3BUqNQp2wxe6/perros-banner.jpg");
+  margin: 0px 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  text-align: right;
+  background-size: cover;
+}
+
 /* Media queries para diferentes tamaños de pantalla */
 @media screen and (min-width: 667px) and (max-width:1023px) {
   .grid-container {
@@ -655,18 +665,15 @@ main {
     border: 1px solid #ddd;
     border-radius: 4px;
   }
-
-
-}
-
-.header-servicios {
-  background-image: url("https://steemitimages.com/DQmTavXuDc679Fdu1BxRFRW998uGfi4sNnc3BUqNQp2wxe6/perros-banner.jpg");
-  margin: 0px 40px;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 400px;
-  text-align: right;
-  background-size: cover;
+  .header-servicios {
+    background-image: url(https://static8.depositphotos.com/1009420/885/i/450/depositphotos_8853147-stock-photo-group-of-five-dogs.jpg);
+    margin: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    text-align: right;
+    background-size: cover;
+  }
 }
 
 
