@@ -34,4 +34,11 @@
     width: 100%; /* Aumenta el ancho al 100% al pasar el mouse */
     visibility: visible; /* Hace visible el elemento al pasar el mouse */
 }
+
+/* Estilos adicionales para cambiar el color del texto en versión desktop */
+@media (min-width: 992px) {
+    .navbar .nav-link {
+        color: #fff !important; /* Cambia el color del texto a blanco en versión desktop */
+    }
+}
 /* Fin */
