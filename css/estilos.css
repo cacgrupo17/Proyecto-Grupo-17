@@ -52,12 +52,6 @@ h6 {
   margin: 5px 0 12px;
 }
 
-#servicios h2, #testimonios h2 {
-  font-family: 'Verdana', cursive;
-  margin-left: 2cm;
- }
-
-
 p {
   margin: 0 0 15px;
 }
@@ -144,14 +138,13 @@ img {
   background-color: #444;
 }
 
+
 #servicios {
   padding: 50px 0;
   background-color: #fff;
 }
 
-#servicios h2 {
-  margin-bottom: 30px;
-}
+
 
 #servicios ul {
   display: flex;
@@ -418,10 +411,7 @@ main {
   margin-bottom: 50px;
 }
 
-.servicios h2 {
-  margin-bottom: 30px;
-  font-family: 'Tahoma', Geneva, Verdana, sans-serif;
-}
+
 
 .servicios ul {
   list-style: none;
@@ -665,10 +655,7 @@ main {
     border: 1px solid #ddd;
     border-radius: 4px;
   }
-  #servicios h2 {
-    margin-bottom: 30px;
-    text-align: center;
-  }
+
 
 }
 

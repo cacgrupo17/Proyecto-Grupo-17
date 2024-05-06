@@ -6,19 +6,31 @@
   --secondary-color: #fff;
   --accent-color: #007bff;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 /* Estilos para escritorio */
 @media (min-width: 1024px) {
-  /* Estilos específicos para escritorio */
-}
+  
 
+
+
+
+
+  
+}
+/*--------------------------------------------------------------------------------------------------*/
 /* Estilos para tabletas */
 @media (max-width: 1023px) and (min-width: 768px) {
-  /* Estilos específicos para tabletas */
+  
+
 }
 
-/* Estilos específicos para dispositivos móviles */
-@media screen and (max-width: 767px) {
+
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/* Estilos específicos para GalaxyS 5 (360 x 674) */ 
+@media screen and (max-width: 360px) and (min-width: 674px) {
   .navbar-toggler {
     display: block;
   }
@@ -67,7 +79,12 @@
     padding: 0 10px;
   }
 
-  /* Contacto */
+
+
+ 
+
+  /* --- Contacto  - Pagina completa ---*/
+
   #formulario label {
     font-weight: bold;
     margin-bottom: 5px;
@@ -111,7 +128,8 @@
     color: var(--primary-color);
   }
 
-  /* Estilos About */
+  /*--- About - Pagina completa --- */
+
   #video-container {
     width: 150px;
     height: 1000px;
@@ -136,62 +154,65 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-}
 
-/* Testimonios */
-@media only screen and (max-width: 768px) {
+/*---Index - Testimonios ----*/
+
   #testimonios {
-    padding: 5px 0;
-    width: 95%;
-    height: auto;
+      padding: 2px 0;
+      width: 95%;
+      height: auto;
+      justify-content: center;
   }
 
   #testimonios .carousel {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
   }
 
   #testimonios img {
-    max-width: 100%;
-    height: auto;
-    margin: 5px;
+      max-width: 100%;
+      height: auto;
+      margin: 5px;
   }
 
   #testimonios .carousel {
-    flex-direction: column;
-    align-items: center;
+      flex-direction: column;
+      align-items: center;
   }
 
   #testimonios .carousel img.enlarge {
-    transform: scale(1.1);
+      transform: scale(1.1);
   }
 
   #testimonios img {
-    margin-bottom: 10px;
+      margin-bottom: 10px;
   }
 
   form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
 
   input,
   select {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 10px;
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 10px;
   }
 
   .radio-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
   }
 
   .radio-group label {
-    margin-bottom: 5px;
+      margin-bottom: 5px;
   }
 }
+
+
+
