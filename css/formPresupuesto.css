@@ -1,15 +1,15 @@
 /* Archivo formPresupuesto.css */
 #formulario {
-  background-color: #a09a9a94;
+  background-color: #a09a9abb;
   border: #c1c2c1 8px outset;
   padding: 20px;
   padding: 3px 10px;
   border: #3f4e3d 5px double;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  max-width: 500px;
+  max-width: 450px;
   margin: 0 auto;
-  margin-right: 1cm;
+  margin-right: 1.5cm;
 }
 
 #formulario label {
@@ -171,8 +171,7 @@
 
 
  #presupuesto {
-  padding: 5px 0;
-  background-image: url("https://i.ibb.co/JmMJ0rQ/150.png"); /* URL directa de la imagen */
+  background-image: url("https://i.ibb.co/mTXk1Hm/adorable-greyhound-dog-home-couch.jpg"); /* URL directa de la imagen */
   background-size: 800px auto; /* Reducir el tamaño de la imagen al 50% del tamaño original */
   background-repeat: no-repeat;
   background-color: #f3e39d;
