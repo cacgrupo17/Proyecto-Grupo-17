@@ -23,41 +23,22 @@
 }
 
 #testimonios img {
-  max-width: 310px;
+  max-width: 300px;
   height: auto;
   padding: 2px;
   margin-right: 11px;
-  margin-left: 11px;
+  margin-left: 3px;
   transition: transform 0.1s ease-in-out;
   border: 1px solid black;
 }
 
 #testimonios .carousel img:hover {
-  transform: scale(1.6);
+  transform: scale(1.2);
 }
 
 
 
 /* Reglas de medios para dispositivos móviles */
 @media only screen and (max-width: 768px) {
-  #testimonios {
-    padding: 5px 0px;
-    width: 95%;
-    height: auto;
-  }
 
-  #testimonios .carousel {
-    display: flex;
-    flex-direction: column; /* Cambiar a dirección de columna */
-    align-items: center; /* Centrar horizontalmente */
-    position: relative;
-  }
-  #testimonios .carousel img.enlarge {
-    transform: scale(1.1);
-  }
-  #testimonios img {
-    width: 100%; /* Ocupa el ancho completo del contenedor */
-    height: auto; /* Altura automática para mantener la proporción */
-    margin-bottom: 10px; /* Espaciado de 1 cm (equivalente a 10px) entre imágenes */
-  }
 }

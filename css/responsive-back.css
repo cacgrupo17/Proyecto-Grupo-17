@@ -1,0 +1,220 @@
+/* Estilos responsive */
+
+/* Escritorio */
+@media (min-width: 1024px) {
+    /* Estilos para escritorio */
+  
+  
+    }
+  
+    
+  
+  
+  
+    
+  /* Tablet */
+  @media (max-width: 1023px) and (min-width: 768px) {
+    /* Estilos para tablet */
+  
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+    /* Estilos específicos para dispositivos móviles */
+    @media screen and (max-width: 767px) {
+  
+  
+    .navbar-toggler {
+      display: block;
+    }
+  
+    .offcanvas {
+      width: 80%;
+    }
+  
+    .offcanvas-body {
+      background-color: #333;
+      padding: 20px;
+    }
+  
+    .offcanvas-body a {
+      color: #fff;
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .offcanvas-header button {
+      color: #fff;
+    }
+  
+    .navbar {
+      grid-template-columns: auto;
+      justify-content: space-between;
+    }
+  
+    .navbar-nav {
+      display: none;
+      grid-template-columns: auto;
+    }
+  
+    .navbar-collapse {
+      display: grid;
+      gap: 20px;
+    }
+  
+    .main-content {
+      padding: 20px;
+    }
+  
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      padding: 0 10px;
+    }
+  
+   /*Contacto */
+  
+    #formulario label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #131212;
+      display: block;
+      text-shadow: 1px 1px 2px #948e8e;
+    }
+  
+    #formulario {
+      max-width: 85%;
+      margin-right: 1cm;
+      
+    }
+  
+    .tamano {
+      margin-left: 0;
+      margin-right: 0;
+      justify-content: center;
+    }
+  
+    .imagen-container1 img,
+    .imagen-container2 img,
+    .imagen-container3 img {
+      width: 90px;
+    }
+  
+    #presupuesto {
+      padding: 10px 0;
+      background-image: url("../imagenes/moño.png"); /* Ruta relativa */
+      background-repeat: no-repeat;
+      background-size: cover; /* La imagen se ajusta dentro del contenedor */
+      background-position: center; /* La imagen se centra dentro del contenedor */
+      margin: 0; /* Asegura que no haya margen alrededor del contenedor */
+  }
+   #presupuesto h1 {
+      font-size: 22px;    
+      margin-right: 3cm;
+      margin-left: 0.5cm;
+      text-shadow: 1px 1px 2px #f8f6f6;
+      color: #1c1c1d;
+     }
+  
+  /* Estilos About */
+  /* Estilos para el contenedor del video */
+    #video-container {
+      width: 150px; /* Ancho de 450px */
+      height: 1000px; /* Altura ajustada automáticamente según el contenido */
+      position: fixed; /* Hace que el contenedor sea fijo en la pantalla */
+      top: 50%; /* Ubica el contenedor en la mitad superior de la ventana */
+      right: 0; /* Separación de 1cm desde el margen derecho */
+      transform: translateY(-50%); /* Centra verticalmente el contenedor */
+      z-index: 999; /* Asegura que el contenedor esté por encima de otros elementos */
+      display: flex; /* Usa flexbox para centrar el video */
+      justify-content: center; /* Centra horizontalmente el video dentro del contenedor */
+      align-items: center; /* Centra verticalmente el video dentro del contenedor */
+      background-color: #0127296c; /* Color de fondo con 50% de opacidad */
+    }
+    #sobre-nosotros {
+      width: 55%;
+      right: 55%;
+      margin-left: 0.5cm;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: #f8f8f8;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+  }
+  
+  /* Testimonios*/
+  
+  /* Reglas de medios para dispositivos móviles */
+  @media only screen and (max-width: 768px) {
+    #testimonios {
+      padding: 5px 0px;
+      width: 95%;
+      height: auto;
+    }
+  
+    #testimonios .carousel {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+    }
+  
+    #testimonios img {
+      width: 100%; /* Ocupa el ancho completo del contenedor */
+      height: auto; /* Altura automática para mantener la proporción */
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+    #testimonios {
+      padding: 5px 0px;
+      width: 95%;
+      height: auto;
+    }
+    #testimonios .carousel {
+      display: flex;
+      flex-direction: column; /* Cambiar a dirección de columna */
+      align-items: center; /* Centrar horizontalmente */
+      position: relative;
+    }
+    #testimonios .carousel img.enlarge {
+      transform: scale(1.1);
+    }
+    #testimonios img {
+      width: 100%; /* Ocupa el ancho completo del contenedor */
+      height: auto; /* Altura automática para mantener la proporción */
+      margin-bottom: 10px; /* Espaciado de 1 cm (equivalente a 10px) entre imágenes */
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    input, select {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 10px;
+    }
+  
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .radio-group label {
+      margin-bottom: 5px;
+    }
+  }
+  
+  
