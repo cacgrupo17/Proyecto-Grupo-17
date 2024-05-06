@@ -9,12 +9,10 @@ const cuidadosEspecialesCheckbox = document.getElementById('cuidados_especiales'
 const totalDiasInput = document.getElementById('total_dias');
 const montoTotalInput = document.getElementById('total_monto');
 
-
 // Verificar si el carácter no es una letra ni un espacio en blanco
-    function validarNombre(nombre) {
-      return /^[a-zA-Z\sÑñ]+$/.test(nombre);
+function validarNombre(nombre) {
+  return /^[a-zA-Z\sÑñ]+$/.test(nombre);
 }
-    
 
 function validarFechaLlegada(fechaLlegada) {
   const fechaActual = new Date();
@@ -70,26 +68,27 @@ function calcularEstadia() {
   // Validaciones
   if (!validarNombre(nombre)) {
     alert('Canólopis te sugiere que revises el nombre de la mascota. Solo puede contener letras y espacios.');
-    return;
+    return false; // Retornar false si la validación falla
   }
 
   if (!validarFechaLlegada(fechaLlegada)) {
     alert('Canólopis te sugiere que revises la fecha de llegada. Debe ser posterior a la fecha actual.');
-    return;
+    return false; // Retornar false si la validación falla
   }
 
   if (!validarFechaSalida(fechaLlegada, fechaSalida)) {
     alert('Canólopis te sugiere que revises la fecha de salida. Debe ser posterior a la fecha de llegada.');
-    return;
+    return false; // Retornar false si la validación falla
   }
 
   if (!tamanoSeleccionado) {
     alert('Canólopis te sugiere que selecciones el tamaño de la mascota.');
-    return;
+    return false; // Retornar false si la validación falla
   }
+
   if (!peso) {
     alert('Canólopis te sugiere que selecciones el peso de la mascota.');
-    return;
+    return false; // Retornar false si la validación falla
   }
 
   // Cálculos
@@ -98,8 +97,11 @@ function calcularEstadia() {
 
   // Mostrar resultados
   totalDiasInput.value = dias;
-  montoTotalInput.value = "$"+ " " + montoTotal.toFixed(2);
+  montoTotalInput.value = "$" + " " + montoTotal.toFixed(2);
+
+  return true; // Retornar true si todas las validaciones se pasan correctamente
 }
+
 montoTotalInput.value = "$" + montoTotalInput.value;
 
 // Habilitar/deshabilitar el campo de peso según la selección del tamaño
@@ -114,7 +116,11 @@ formElement.addEventListener('submit', event => {
   event.preventDefault(); // Prevenir el envío del formulario
 
   // Validar campos y realizar cálculos aquí
-  calcularEstadia();
+  if (calcularEstadia()) {
+    // Si calcularEstadia() devuelve true, significa que no hubo errores
+    // Aquí puedes enviar el formulario o realizar cualquier otra acción necesaria
+    // ...
+  }
 });
 
 

@@ -28,7 +28,7 @@
 
 
   /* Estilos específicos para dispositivos móviles */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
 
 
   .navbar-toggler {
@@ -115,17 +115,13 @@
     background-position: center; /* La imagen se centra dentro del contenedor */
     margin: 0; /* Asegura que no haya margen alrededor del contenedor */
 }
-
-
-
-
-  #presupuesto h1 {
+ #presupuesto h1 {
     font-size: 30px;
     margin-right: 2.3cm;
     margin-left: 0.5cm;
     text-shadow: 1px 1px 2px #f8f6f6;
     color: #1c1c1d;
-  }
+   }
 
 /* Estilos About */
 /* Estilos para el contenedor del video */
