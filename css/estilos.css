@@ -607,10 +607,9 @@ main {
 
 .header-servicios {
   background-image: url("https://steemitimages.com/DQmTavXuDc679Fdu1BxRFRW998uGfi4sNnc3BUqNQp2wxe6/perros-banner.jpg");
-  margin: 0px 40px;
   background-position: center;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 500px;
   text-align: right;
   background-size: cover;
 }
