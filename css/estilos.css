@@ -666,12 +666,33 @@ main {
   }
   .header-servicios {
     background-image: url(https://static8.depositphotos.com/1009420/885/i/450/depositphotos_8853147-stock-photo-group-of-five-dogs.jpg);
-    margin: 10px;
+    margin: 0px;
     background-position: center;
     background-repeat: no-repeat;
     height: 400px;
     text-align: right;
-    background-size: cover;
+    background-size: 100% auto;
+  }
+}
+
+.testimonios-carousel {
+  animation-duration: 20s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  
+}
+.testimonios-carousel:hover {
+  animation-play-state: paused;
+}
+@keyframes slidein {
+  from {
+    margin-left: -175%;
+  }
+
+  to {
+    margin-left: 175%;
   }
 }
 
