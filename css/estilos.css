@@ -561,6 +561,26 @@ main {
   text-align: right;
   background-size: cover;
 }
+.testimonios-carousel {
+  animation-duration: 20s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  
+}
+.testimonios-carousel:hover {
+  animation-play-state: paused;
+}
+@keyframes slidein {
+  from {
+    margin-left: -175%;
+  }
+
+  to {
+    margin-left: 175%;
+  }
+}
 
 /* Media queries para diferentes tamaños de pantalla */
 @media screen and (min-width: 667px) and (max-width:1023px) {
@@ -579,6 +599,26 @@ main {
   #video-container {
     display: none;
     /* Oculta el contenedor del video */
+  }
+  .testimonios-carousel {
+    animation-play-state: paused;
+  }
+  @keyframes slidein {
+    from { 
+      width: 0%;
+  }
+    to {
+      width: 100%;
+    }
+  }
+  #testimonios {
+    width: 100%;
+    padding: 6%;
+    position: relative;
+    background-color: #f5eec8;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -621,27 +661,24 @@ main {
     text-align: right;
     background-size: 100% auto;
   }
-}
-
-.testimonios-carousel {
-  animation-duration: 20s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-play-state: running;
-  
-}
-.testimonios-carousel:hover {
-  animation-play-state: paused;
-}
-@keyframes slidein {
-  from {
-    margin-left: -175%;
+  .testimonios-carousel {
+    animation-play-state: paused;
   }
-
-  to {
-    margin-left: 175%;
+  @keyframes slidein {
+    from { 
+      width: 0%;
+  }
+    to {
+      width: 100%;
+    }
+  }
+  #testimonios {
+    width: 100%;
+    padding: 6%;
+    position: relative;
+    background-color: #f5eec8;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
   }
 }
-
-
