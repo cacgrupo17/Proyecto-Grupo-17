@@ -122,5 +122,3 @@ formElement.addEventListener('submit', event => {
     // ...
   }
 });
-
-

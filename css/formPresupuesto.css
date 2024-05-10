@@ -175,8 +175,9 @@
   background-size: 800px auto; /* Reducir el tamaño de la imagen al 50% del tamaño original */
   background-repeat: no-repeat;
   background-color: #f3e39d;
-  background-size: contain; /* La imagen se ajusta para cubrir completamente el contenedor, manteniendo la relación de aspecto */
-  background-position: left; /* La imagen se centra dentro del contenedor */
+  background-size: cover; /* La imagen se ajusta para cubrir completamente el contenedor, manteniendo la relación de aspecto */
+  background-position: center; /* La imagen se centra dentro del contenedor */
+  
  }
 
  

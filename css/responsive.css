@@ -29,88 +29,84 @@
 
 
 /*--------------------------------------------------------------------------------------------------*/
-/* Estilos específicos para GalaxyS 5 (360 x 674) */ 
-@media screen and (max-width: 360px) and (min-width: 674px) {
-  .navbar-toggler {
-    display: block;
+/* Estilos específicos para GalaxyS 5 (360 x 674) ----  375 x 667 px ----- */ 
+
+@media screen and (max-width: 375px) and (min-width: 667px) {
+    .navbar-toggler {
+      display: block;
   }
 
-  .offcanvas {
-    width: 80%;
+    .offcanvas {
+      width: 80%;
   }
 
-  .offcanvas-body {
-    background-color: var(--primary-color);
-    padding: 20px;
+    .offcanvas-body {
+      background-color: var(--primary-color);
+      padding: 20px;
   }
 
-  .offcanvas-body a {
-    color: var(--secondary-color);
-    display: block;
-    margin-bottom: 10px;
+    .offcanvas-body a {
+      color: var(--secondary-color);
+      display: block;
+      margin-bottom: 10px;
   }
 
-  .offcanvas-header button {
-    color: var(--secondary-color);
+    .offcanvas-header button {
+      color: var(--secondary-color);
   }
 
-  .navbar {
-    grid-template-columns: auto;
-    justify-content: space-between;
+    .navbar {
+      grid-template-columns: auto;
+      justify-content: space-between;
   }
 
-  .navbar-nav {
-    display: none;
-    grid-template-columns: auto;
+    .navbar-nav {
+      display: none;
+      grid-template-columns: auto;
   }
 
-  .navbar-collapse {
-    display: grid;
-    gap: 20px;
+    .navbar-collapse {
+      display: grid;
+      gap: 20px;
   }
 
-  .main-content {
-    padding: 20px;
+    .main-content {
+      padding: 20px;
   }
 
-  .footer-left,
-  .footer-center,
-  .footer-right {
-    padding: 0 10px;
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      padding: 0 10px;
   }
-}
-
-
- 
 
   /* --- Contacto  - Pagina completa ---*/
   
-  @media screen and (max-width: 360px) and (min-width: 320px) {
     #formulario label {
       font-weight: bold;
       margin-bottom: 5px;
       color: var(--primary-color);
       display: block;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    }
+  }
   
     #formulario {
       max-width: 85%;
       margin-right: 1cm;
-    }
+  }
   
     .tamano {
       margin-left: 0;
       margin-right: 0;
       justify-content: center;
-    }
+  }
   
     .imagen-container1 img,
     .imagen-container2 img,
     .imagen-container3 img {
       max-width: 90px;
       height: auto;
-    }
+  }
   
     #presupuesto {
       padding: 10px 0;
@@ -119,7 +115,7 @@
       background-size: cover;
       background-position: center;
       margin: 0;
-    }
+  }
   
     #presupuesto h1 {
       font-size: 22px;
@@ -127,92 +123,92 @@
       margin-left: 0.5cm;
       text-shadow: 1px 1px 2px var(--secondary-color);
       color: var(--primary-color);
-    }
+  }
  
   
 
   /*--- About - Pagina completa --- */
 
-  #video-container {
-    width: 150px;
-    height: 1000px;
-    position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(2, 39, 41, 0.4);
+    #video-container {
+      width: 150px;
+      height: 1000px;
+      position: fixed;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(2, 39, 41, 0.4);
   }
 
-  #sobre-nosotros {
-    width: 55%;
-    right: 55%;
-    margin-left: 0.5cm;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    #sobre-nosotros {
+      width: 55%;
+      right: 55%;
+      margin-left: 0.5cm;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: #f8f8f8;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
-/*---Index - Testimonios ----*/
+  /*---Index - Testimonios ----*/
 
-  #testimonios {
+    #testimonios {
       padding: 2px 0;
       width: 95%;
       height: auto;
       justify-content: center;
   }
 
-  #testimonios .carousel {
+    #testimonios .carousel {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       position: relative;
   }
 
-  #testimonios img {
+    #testimonios img {
       max-width: 100%;
       height: auto;
       margin: 5px;
   }
 
-  #testimonios .carousel {
+    #testimonios .carousel {
       flex-direction: column;
       align-items: center;
   }
 
-  #testimonios .carousel img.enlarge {
+    #testimonios .carousel img.enlarge {
       transform: scale(1.1);
   }
 
-  #testimonios img {
+    #testimonios img {
       margin-bottom: 10px;
   }
 
-  form {
+    form {
       display: flex;
       flex-direction: column;
       align-items: center;
   }
 
-  input,
-  select {
+    input,
+    select {
       width: 100%;
       max-width: 300px;
       margin-bottom: 10px;
   }
 
-  .radio-group {
+    .radio-group {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
   }
 
-  .radio-group label {
+    .radio-group label {
       margin-bottom: 5px;
   }
 }
