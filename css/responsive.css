@@ -37,9 +37,9 @@
 
 
 /*--------------------------------------------------------------------------------------------------*/
-/* Estilos específicos para movil (360 x 674) ----  375 x 667 px ----- */ 
+/* Estilos específicos para movil */ 
 
-@media screen and (max-width: 375px) and (min-width: 667px) {
+@media screen and (max-width: 667px) and (min-width: 375px) {
     .navbar-toggler {
       display: block;
   }

@@ -9,32 +9,28 @@ const cuidadosEspecialesCheckbox = document.getElementById('cuidados_especiales'
 const totalDiasInput = document.getElementById('total_dias');
 const montoTotalInput = document.getElementById('total_monto');
 
-// Verificar si el carácter no es una letra ni un espacio en blanco
-function validarNombre(nombre) {
-  return /^[a-zA-Z\sÑñ]+$/.test(nombre);
-}
 
 function validarFechaLlegada(fechaLlegada) {
   const fechaActual = new Date();
-  fechaActual.setHours(0, 0, 0, 0); // Establecer las horas de la fecha actual a 0 (medianoche)
-  fechaLlegada.setHours(0, 0, 0, 0); // Establecer las horas de la fecha de llegada a 0 (medianoche)
+  fechaActual.setHours(0, 0, 0, 0); 
+  fechaLlegada.setHours(0, 0, 0, 0); 
 
-  return fechaLlegada >= fechaActual; // Devolver true si la fecha de llegada es igual o posterior a la fecha actual
+  return fechaLlegada >= fechaActual; 
 }
 
-// Función para validar la fecha de salida
+
 function validarFechaSalida(fechaLlegada, fechaSalida) {
   return fechaSalida > fechaLlegada;
 }
 
-// Función para calcular el número de días entre dos fechas
+
 function calcularDias(fechaLlegada, fechaSalida) {
-  const unDia = 24 * 60 * 60 * 1000; // Horas * minutos * segundos * milisegundos
+  const unDia = 24 * 60 * 60 * 1000; 
   const diffDias = Math.round(Math.abs((fechaSalida - fechaLlegada) / unDia));
-  return diffDias + 1; // Se agrega 1 para incluir el día de llegada y salida
+  return diffDias + 1; 
 }
 
-// Función para calcular el monto total
+
 function calcularMontoTotal(dias, peso, cuidadosEspeciales) {
   let precioBase;
   switch (peso) {
@@ -56,7 +52,7 @@ function calcularMontoTotal(dias, peso, cuidadosEspeciales) {
   return montoTotal;
 }
 
-// Función para manejar el cálculo de la estadía
+
 function calcularEstadia() {
   const nombre = nombreInput.value.trim();
   const fechaLlegada = new Date(fechaLlegadaInput.value);
@@ -65,30 +61,30 @@ function calcularEstadia() {
   const peso = pesoSelect.value;
   const cuidadosEspeciales = cuidadosEspecialesCheckbox.checked;
 
-  // Validaciones
+
   if (!validarNombre(nombre)) {
     alert('Canólopis te sugiere que revises el nombre de la mascota. Solo puede contener letras y espacios.');
-    return false; // Retornar false si la validación falla
+    return false; 
   }
 
   if (!validarFechaLlegada(fechaLlegada)) {
     alert('Canólopis te sugiere que revises la fecha de llegada. Debe ser posterior a la fecha actual.');
-    return false; // Retornar false si la validación falla
+    return false; 
   }
 
   if (!validarFechaSalida(fechaLlegada, fechaSalida)) {
     alert('Canólopis te sugiere que revises la fecha de salida. Debe ser posterior a la fecha de llegada.');
-    return false; // Retornar false si la validación falla
+    return false; 
   }
 
   if (!tamanoSeleccionado) {
     alert('Canólopis te sugiere que selecciones el tamaño de la mascota.');
-    return false; // Retornar false si la validación falla
+    return false; 
   }
 
   if (!peso) {
     alert('Canólopis te sugiere que selecciones el peso de la mascota.');
-    return false; // Retornar false si la validación falla
+    return false; 
   }
 
   // Cálculos
@@ -99,12 +95,11 @@ function calcularEstadia() {
   totalDiasInput.value = dias;
   montoTotalInput.value = "$" + " " + montoTotal.toFixed(2);
 
-  return true; // Retornar true si todas las validaciones se pasan correctamente
+  return true; 
 }
 
 montoTotalInput.value = "$" + montoTotalInput.value;
 
-// Habilitar/deshabilitar el campo de peso según la selección del tamaño
 tamanoRadioButtons.forEach(radioButton => {
   radioButton.addEventListener('change', () => {
     pesoSelect.disabled = !Array.from(tamanoRadioButtons).some(radio => radio.checked);
@@ -113,12 +108,9 @@ tamanoRadioButtons.forEach(radioButton => {
 
 // Agregar event listener al formulario para evitar el envío si hay errores
 formElement.addEventListener('submit', event => {
-  event.preventDefault(); // Prevenir el envío del formulario
+  event.preventDefault(); 
 
   // Validar campos y realizar cálculos aquí
   if (calcularEstadia()) {
-    // Si calcularEstadia() devuelve true, significa que no hubo errores
-    // Aquí puedes enviar el formulario o realizar cualquier otra acción necesaria
-    // ...
   }
 });
