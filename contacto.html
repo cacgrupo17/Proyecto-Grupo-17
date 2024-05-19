@@ -55,14 +55,15 @@
       </div>
     </nav>
   </header>
+  
   <main>
     <section id="presupuesto">
-     <br>
+      <br>
       <h1>Presupuesta la estadía</h1>
-      <form id="formulario" style="display: flex; flex-direction: column;">
+      <form id="formulario">
         <br>
         <label for="nombre">Nombre de la mascota:<span class="required"></span></label>
-        <input type="text" id="nombre" placeholder="Nombre de la mascota" value="" onfocus="if (this.placeholder == 'Nombre de la mascota') this.placeholder = ''" onblur="if (this.placeholder == '') this.placeholder = 'Nombre de la mascota'" required>
+        <input type="text" id="nombre" placeholder="Nombre de la mascota" required>
        
         <label for="fecha_llegada">Fecha de llegada:<span class="required"></span></label>
         <input type="date" id="fecha_llegada" required>
@@ -75,25 +76,25 @@
                 
           <div class="tamanios">
             <div class="tamano">  
-
+  
               <div class="imagen-container1">
                 <img src="imagenes/chico3.svg" alt="Chico">
                 <h6>Chico</h6>
                 <input type="radio" name="size" id="chico" required>
               </div>
-
+  
               <div class="imagen-container2">
                 <img src="imagenes/mediano3.svg" alt="Mediano">
                 <h6>Mediano</h6>
                 <input type="radio" name="size" id="mediano" required>
               </div>
-
+  
               <div class="imagen-container3">
                 <img src="imagenes/grande3.svg" alt="Grande">
                 <h6>Grande</h6>
                 <input type="radio" name="size" id="grande" required>
               </div>
-
+  
             </div>
           </div>
         </div>
@@ -108,20 +109,20 @@
           </select>
         </div>
        
-        <div style="display: flex; align-items: center;">
+        <div class="inline-container">
           <label for="cuidados_especiales" class="inline-label">¿Requiere cuidados especiales?</label>
           <input type="checkbox" id="cuidados_especiales" class="inline-checkbox">
         </div>
           
-        <button type="button" onclick="calcularEstadia()" style="margin-top: 1cm; margin-bottom: 1cm; align-self: center;">Calcular</button>
-        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-          <div style="width: 45%;">
+        <button type="button" onclick="calcularEstadia()">Calcular</button>
+        <div class="total-container">
+          <div class="total-dias">
             <label for="total_dias">Total de días:</label>
-            <input type="text" id="total_dias" readonly style="width: 100%;">
+            <input type="text" id="total_dias" readonly>
           </div>
-          <div style="width: 45%;">
+          <div class="total-monto">
             <label for="total_monto">Monto total:</label>
-            <input type="text" id="total_monto" readonly style="width: 100%;">
+            <input type="text" id="total_monto" readonly>
           </div>
         </div>
       </form>
@@ -130,14 +131,16 @@
       <br>
     </section>
   </main>
+
+   <!-- El formulario queda diseñado para que luego, en la parte de backend podamos agregar las formulas para calcular la estadía -->
   
   <section class="contacto">
     <h2>Contáctanos</h2>
     <form action="#">
-      <input type="text" placeholder="Nombre">
-      <input type="email" placeholder="Correo electrónico">
-      <input type="tel" placeholder="Teléfono">
-      <textarea placeholder="Mensaje"></textarea>
+      <input type="text" placeholder="Nombre"required>
+      <input type="email" placeholder="Correo electrónico"required>
+      <input type="tel" placeholder="Teléfono"required>
+      <textarea placeholder="Mensaje"required></textarea>
       <button type="submit">Enviar</button><br>
     </form> 
   </section>
@@ -167,9 +170,8 @@
         </p>
     </div>
     
-    <!-- Contenedor central del pie de página -->
-    <div class="footer-center">
-      <!-- Información de contacto -->         
+  
+    <div class="footer-center">      
         <div>
             <i class="fa fa-map-marker"></i>
             <p><span>Av. Siempreviva 1234</span>
@@ -202,7 +204,6 @@
         </div>
     </div>
   </footer>
-
   <!-- Enlace JS -->
   <script src="js/index.js" defer></script>
   <!-- Boostrap JS -->

@@ -1,4 +1,4 @@
-/* Archivo formPresupuesto.css */
+
 #formulario {
   background-color: #a09a9abb;
   border: #c1c2c1 8px outset;
@@ -10,6 +10,8 @@
   max-width: 450px;
   margin: 0 auto;
   margin-right: 0.5cm;
+  display: flex;
+  flex-direction: column;
 }
 
 #formulario label {
@@ -38,6 +40,9 @@
   font-size: 18px;
   transition: background-color 0.3s;
   border: none;
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+  align-self: center;
 }
 
 #formulario button:hover {
@@ -73,48 +78,48 @@
   align-items: flex-end;
 }
 
-/* Para la imagen Chico */
+/* Perro Chico */
 .imagen-container1 {
   text-align: center;
-  margin-bottom: 10px; /* Espacio entre los bloques de imágenes */
+  margin-bottom: 10px; 
 }
 
 .imagen-container1 img {
-  width: 70px; /* Ajusta el tamaño de la imagen Chico */
+  width: 70px; 
   height: auto;
   display: block;
   margin-right: 0.5cm;
 }
 
-/* Para la imagen Mediano */
+/* Perro Mediano */
 .imagen-container2 {
   text-align: center;
-  margin-bottom: 5px; /* Espacio entre los bloques de imágenes */
+  margin-bottom: 5px; 
 }
 
 .imagen-container2 img {
-  width: 100px; /* Ajusta el tamaño de la imagen Mediano */
+  width: 100px; 
   height: auto;
   display: block;
 }
 
-/* Para la imagen Grande */
+/* Perro Grande */
 .imagen-container3 {
   text-align: center;
-  margin-bottom: 5px; /* Espacio entre los bloques de imágenes */
+  margin-bottom: 5px; 
 }
 
 .imagen-container3 img {
-  width: 130px; /* Ajusta el tamaño de la imagen Grande */
+  width: 130px; 
   height: auto;
   display: block;
 }
 
 .required::after {
-  content: "*"; /* Agrega el asterisco */
+  content: "*"; 
   color: red; 
-  display: inline; /* Asegura que el asterisco se muestre en línea con el texto */
-  margin-left: 3px; /* Ajusta el espacio entre los dos puntos y el asterisco */
+  display: inline; 
+  margin-left: 3px; 
 }
 
 #peso-contenedor label {
@@ -133,18 +138,18 @@
   font-size: 16px;
 }
 
-#peso option{
+#peso option {
   color: #797777;
 }
+
 #peso option:checked {
   color: #1c0444;
 }
 
-
 .tamanios {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start; /* Alinea los elementos verticalmente al principio */
+  align-items: flex-start; 
 }
 
 .tamano {
@@ -154,101 +159,98 @@
 .imagen-container1,
 .imagen-container2,
 .imagen-container3 {
-  margin-bottom: 10px; /* Espacio entre los contenedores de imágenes */
+  margin-bottom: 10px; 
 }
 
 .imagen-container img {
-  max-width: 100px; /* Ajusta el tamaño máximo de las imágenes según sea necesario */
+  max-width: 100px; 
 }
 
 .imagen-container h6 {
-  margin-top: 5px; /* Espacio entre la imagen y el texto */
+  margin-top: 5px; 
 }
 
 .imagen-container input[type="radio"] {
-  margin-top: 5px; /* Espacio entre el texto y el radiobutton */
+  margin-top: 5px; 
 }
 
-
- #presupuesto {
-  background-image: url("https://i.ibb.co/mTXk1Hm/adorable-greyhound-dog-home-couch.jpg"); /* URL directa de la imagen */
-  background-size: 800px auto; /* Reducir el tamaño de la imagen al 50% del tamaño original */
+#presupuesto {
+  background-image: url("https://i.ibb.co/mTXk1Hm/adorable-greyhound-dog-home-couch.jpg"); 
+  background-size: 800px auto; 
   background-repeat: no-repeat;
   background-color: #f3e39d;
-  background-size: cover; /* La imagen se ajusta para cubrir completamente el contenedor, manteniendo la relación de aspecto */
-  background-position: center; /* La imagen se centra dentro del contenedor */
-  
- }
+  background-size: cover; 
+  background-position: center; 
+}
 
- 
- #presupuesto p {
+#presupuesto p {
   color: #000000;
   margin-left: 0.5cm;
   font-size: 3em;
   text-align: left;
   font-weight: 800;
   text-shadow: 2px 2px 3px #5bf4ffde;
- }
- 
- #presupuesto h1 {
+}
+
+#presupuesto h1 {
   margin-bottom: 30px;
   color: #000000;
   text-align: right;
   font-size: 32px;
   margin-right: 3cm;
   text-shadow: 2px 2px 3px #ff7e4bde;
- }
- 
- #presupuesto .imagen-mascota {
+}
+
+#presupuesto .imagen-mascota {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
- }
- 
- .mascota img {
+}
+
+.mascota img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
- }
- 
- #presupuesto .descripcion {
+}
+
+#presupuesto .descripcion {
   margin-bottom: 20px;
   text-align: justify;
- }
- 
- #presupuesto .descripcion p {
+}
+
+#presupuesto .descripcion p {
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
- }
- 
- #presupuesto .ventajas {
+}
+
+#presupuesto .ventajas {
   list-style: none;
   padding: 0;
   margin-top: 20px;
- }
- 
- #presupuesto .ventajas li {
+}
+
+#presupuesto .ventajas li {
   margin-bottom: 10px;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
- }
- 
- #presupuesto .ventajas li i {
+}
+
+#presupuesto .ventajas li i {
   font-size: 20px;
   color: #007bff;
   margin-right: 10px;
- }
- 
- #presupuesto .ventajas li p {
+}
+
+#presupuesto .ventajas li p {
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
- }
- 
- #presupuesto .boton-reserva {
+}
+
+#presupuesto .boton-reserva {
   background-color: #052f5c;
   color: #fff;
   padding: 10px 20px;
@@ -259,9 +261,37 @@
   display: inline-block;
   transition: background-color 0.3s;
   border: none;
- }
- 
- #presupuesto .boton-reserva:hover {
+}
+
+#presupuesto .boton-reserva:hover {
   background-color: #33b5e5;
- }
- 
+}
+
+
+.inline-container {
+  display: flex;
+  align-items: center;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.total-dias, .total-monto {
+  width: 45%;
+}
+
+.inline-label {
+  display: inline;
+}
+
+.inline-checkbox {
+  display: inline;
+}
+
+  
+
+

@@ -88,8 +88,7 @@
       padding: 0 10px;
   }
 
-  /* --- Contacto  - Pagina completa ---*/
-  
+   
     #formulario label {
       font-weight: bold;
       margin-bottom: 5px;
@@ -127,7 +126,7 @@
     
     #presupuesto h1 {
       font-size: 22px;
-      margin-right: 2cm; /* Cambié de 3cm a 2cm */
+      margin-right: 2cm; 
       margin-left: 0.5cm;
       text-shadow: 1px 1px 2px var(--secondary-color);
       color: var(--primary-color);
