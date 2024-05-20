@@ -1,6 +1,5 @@
 /*Footer*/
 footer {
-    position: fixed; /* Establece la posición del footer como fija, lo que significa que permanecerá en la parte inferior de la ventana del navegador. */
     bottom: 0; /* Coloca el footer al borde inferior de la ventana del navegador. */
     z-index: 1000; /* Establece la propiedad z-index del footer en 1000 para asegurarse de que esté por encima de otros elementos con z-index inferiores. */
 }

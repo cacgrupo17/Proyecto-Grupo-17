@@ -64,7 +64,13 @@
         <br>
         <label for="nombre">Nombre de la mascota:<span class="required"></span></label>
         <input type="text" id="nombre" placeholder="Nombre de la mascota" required>
-       
+
+        <div id="imagen-contenedor">
+          <label for="imagen">Cargar imagen de la mascota:</label>
+          <input type="file" id="imagen" accept="image/*" required>
+          <div id="imagen-vista-previa"></div>
+        </div>
+        
         <label for="fecha_llegada">Fecha de llegada:<span class="required"></span></label>
         <input type="date" id="fecha_llegada" required>
        
