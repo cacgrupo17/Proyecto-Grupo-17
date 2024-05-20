@@ -230,7 +230,7 @@ img {
 }
 
  /* Estilos de la galeria de imagenes */
-.imgheader{
+/*.imgheader{
   margin-top: 25px;
   background-image:url(../imagenes/Header-test-2.jpg);
   height: 400px; 
@@ -238,7 +238,7 @@ img {
   background-repeat: no-repeat; 
   background-size: cover; 
 
-}
+}*/
 .galeria {
   height: 200px;
   max-width: 350px; /*evita que el texto se expanda y pise la imagen*/

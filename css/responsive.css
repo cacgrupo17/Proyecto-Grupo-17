@@ -20,6 +20,15 @@
     
    }
 
+   .imgheader{
+    margin-top: 25px;
+    background-image:url(../imagenes/Header-test-2.jpg);
+    height: 400px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+  
+  }
 
 
 
@@ -29,6 +38,15 @@
 /* Estilos para tabletas */
 @media (max-width: 1023px) and (min-width: 768px) {
   
+  .imgheader{
+    margin-top: 25px;
+    background-image:url(../imagenes/Header-test-2.jpg);
+    height: 400px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+  
+  }
 
 }
 
@@ -39,7 +57,7 @@
 /*--------------------------------------------------------------------------------------------------*/
 /* Estilos específicos para movil */ 
 
-@media screen and (max-width: 667px) and (min-width: 375px) {
+@media screen and (max-width: 767px) and (min-width: 200px) {
     .navbar-toggler {
       display: block;
   }
@@ -132,7 +150,14 @@
       color: var(--primary-color);
   }
  
-  
+  .imgheader{
+    padding: 10px 0;
+    background-image: url("../imagenes/Header-mobile-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
 
   /*--- About - Pagina completa --- */
 
